@@ -18,27 +18,30 @@
 ---
 
 ## Table of Contents
-1. [Executive Summary & Core Portfolio KPIs](#1-executive-summary--core-portfolio-kpis)
-2. [Interactive Visual Intelligence Dashboards](#2-interactive-visual-intelligence-dashboards)
-3. [Key Evidence-Based Analytical Findings](#3-key-evidence-based-analytical-findings)
-4. [Technology Stack & Repository Architecture](#4-technology-stack--repository-architecture)
-5. [Data Quality & Governance Audit Scorecard](#5-data-quality--governance-audit-scorecard)
-6. [Database Modeling & Analytical Star Schema](#6-database-modeling--analytical-star-schema)
-7. [Analytical SQL Query Library (25 Business Queries)](#7-analytical-sql-query-library-25-business-queries)
-8. [Python Statistical Testing & Scorecard Modeling](#8-python-statistical-testing--scorecard-modeling)
-9. [Power BI Suite & DAX Measures](#9-power-bi-suite--dax-measures)
-10. [Executive Excel Management Model](#10-executive-excel-management-model)
-11. [Quickstart & Complete Reproducibility](#11-quickstart--complete-reproducibility)
-12. [Interview Guide & Presentation Pitch](#12-interview-guide--presentation-pitch)
-13. [Governance Boundaries & Limitations](#13-governance-boundaries--limitations)
+1. [Executive Summary & Macro Portfolio Health](#1-executive-summary--macro-portfolio-health)
+2. [End-to-End Analytics Architecture Flowchart](#2-end-to-end-analytics-architecture-flowchart)
+3. [The Mathematics of Credit Risk & Formulations](#3-the-mathematics-of-credit-risk--formulations)
+4. [Statistical Inferential Testing & Mathematical Proofs](#4-statistical-inferential-testing--mathematical-proofs)
+5. [Credit Risk Decision & Underwriting Flowchart](#5-credit-risk-decision--underwriting-flowchart)
+6. [Interactive Visual Intelligence Dashboards](#6-interactive-visual-intelligence-dashboards)
+7. [Comprehensive Quantitative Tables & Breakdowns](#7-comprehensive-quantitative-tables--breakdowns)
+8. [Automated 12-Rule Data Quality & Governance Scorecard](#8-automated-12-rule-data-quality--governance-scorecard)
+9. [Relational Star Schema Database Modeling](#9-relational-star-schema-database-modeling)
+10. [Analytical SQL Query Library (25 Verified Queries)](#10-analytical-sql-query-library-25-verified-queries)
+11. [Cross-Layer Mathematical Reconciliation (0.00 Discrepancy)](#11-cross-layer-mathematical-reconciliation-000-discrepancy)
+12. [Power BI Suite & DAX Measures](#12-power-bi-suite--dax-measures)
+13. [Institutional Management Excel Model](#13-institutional-management-excel-model)
+14. [Quickstart & Complete Reproducibility](#14-quickstart--complete-reproducibility)
+15. [Interview Guide & Presentation Pitch](#15-interview-guide--presentation-pitch)
+16. [Governance Boundaries & Limitations](#16-governance-boundaries--limitations)
 
 ---
 
-## 1. Executive Summary & Core Portfolio KPIs
+## 1. Executive Summary & Macro Portfolio Health
 
 **FinSight 360** is an institutional banking analytics and credit risk intelligence platform engineered to evaluate consumer lending health, uncover risk concentrations, and deliver board-level Business Intelligence deliverables.
 
-The platform is evaluated across **396,030 closed loan facilities** spanning **$5,589,522,775 ($5.59 Billion)** in original funded principal (June 2007 – December 2016). Every contract in the evaluation scope reached a verified terminal outcome (`Fully Paid` or `Charged Off`), eliminating survival censoring bias and yielding an authoritative **19.61% baseline default rate**.
+The platform is evaluated across **396,030 closed loan facilities** spanning **$5,589,522,775 ($5.59 Billion)** in original funded principal originated between June 2007 and December 2016. Every contract in the evaluation scope reached a verified terminal outcome (`Fully Paid` or `Charged Off`), eliminating survival censoring bias and yielding an authoritative **19.61% baseline default rate**.
 
 ```
 +-------------------------------------------------------------------------------------------------------+
@@ -57,20 +60,167 @@ The platform is evaluated across **396,030 closed loan facilities** spanning **$
 
 ---
 
-## 2. Interactive Visual Intelligence Dashboards
+## 2. End-to-End Analytics Architecture Flowchart
 
-FinSight 360 includes three high-resolution visual dashboards matching executive Power BI specifications:
+The following flowchart outlines the automated pipeline from raw data extraction to dimensional warehouse loading and multi-channel BI delivery:
+
+```mermaid
+flowchart TD
+    A["Raw Ingestion: LendingClub Public Data (396,030 Records, 27 Columns)"] --> B["Ingest & Schema Check: Verify Expected Columns & Types (src/ingest.py)"]
+    B --> C["Data Cleaning: Regex Address Parsing, State & Zip, Term Normalization (src/clean.py)"]
+    C --> D["Feature Engineering: Risk Bands, DTI Bands, Income Bands (src/transform.py)"]
+    D --> E["Data Quality Engine: 12 Automated Validation Checks (src/validate.py)"]
+    E --> F{"Audit Gate: All Checks Verified?"}
+    F -->|Pass / Warning Logged| G["Relational Star Schema: SQLite & PostgreSQL Fact & Dimension Tables"]
+    G --> H1["Analytical Views: v_portfolio_summary, v_risk_grade (sql/04_analytical_views.sql)"]
+    G --> H2["SQL Query Library: 25 Production Business Queries (sql/05_business_queries.sql)"]
+    G --> H3["Interactive Power BI Suite: 3-Page Executive Dashboard (powerbi/)"]
+    G --> H4["Institutional Excel Workbook: 6 Formatted Sheets (excel/)"]
+    G --> H5["Reproducible Notebooks: EDA, Statistical Tests & Baseline Modeling (notebooks/)"]
+```
+
+---
+
+## 3. The Mathematics of Credit Risk & Formulations
+
+In consumer credit analytics, precision in mathematical formulations prevents costly misallocations of capital. The platform relies on the following core mathematical equations:
+
+### 3.1 Observed Default Rate ($\text{ODR}$)
+The primary benchmark credit loss metric is defined as the unweighted proportion of resolved facilities resulting in terminal write-off:
+
+$$\text{ODR} = \frac{\sum_{i=1}^{N} \mathbb{I}(\text{loan\_status}_i = \text{'Charged Off'})}{N}$$
+
+$$\text{ODR} = \frac{77,673}{396,030} = 0.196129 \approx \mathbf{19.6131\%}$$
+
+*Where $\mathbb{I}(\cdot)$ is the indicator function and $N = 396,030$ is the total population of closed facilities.*
+
+---
+
+### 3.2 Dollar-Weighted Default Capital Exposure Share ($\text{DES}$)
+Measures the capital at risk weighted by original loan principal funded:
+
+$$\text{DES} = \frac{\sum_{i=1}^{N} \text{loan\_amnt}_i \cdot \mathbb{I}(\text{loan\_status}_i = \text{'Charged Off'})}{\sum_{i=1}^{N} \text{loan\_amnt}_i}$$
+
+$$\text{DES} = \frac{\$1,158,829,350.00}{\$5,589,522,775.00} = 0.207322 \approx \mathbf{20.7322\%}$$
+
+*Interpretation: Because defaulted facilities had a slightly higher average ticket size (\$14,919 vs \$13,917 for fully paid loans), the dollar-weighted capital loss rate (20.73%) exceeds the unit default rate (19.61%) by **+112 basis points**.*
+
+---
+
+### 3.3 Annualized Installment Debt Burden ($\text{IDB}$)
+Calculates the proportion of borrower gross annual income committed to servicing the loan facility:
+
+$$\text{IDB}_i = \left( \frac{\text{installment}_i \times 12}{\text{annual\_inc}_i} \right) \times 100$$
+
+*Example for median borrower (\$329.48 monthly installment, \$75,000 annual income):*
+
+$$\text{IDB} = \left( \frac{329.48 \times 12}{75,000} \right) \times 100 = \frac{3,953.76}{75,000} \times 100 = \mathbf{5.27\%}$$
+
+---
+
+### 3.4 Relative Segment Risk Index ($\text{SRI}$)
+Quantifies how much more or less risky a given segment $s$ is relative to the total portfolio baseline:
+
+$$\text{SRI}_s = \frac{\text{ODR}_s}{\text{ODR}_{\text{portfolio}}}$$
+
+*Example for Grade G ($\text{ODR}_G = 45.84\%$) vs. Grade A ($\text{ODR}_A = 6.29\%$):*
+
+$$\text{SRI}_G = \frac{45.84\%}{19.61\%} = \mathbf{2.34} \quad (134\%\text{ elevated risk})$$
+
+$$\text{SRI}_A = \frac{6.29\%}{19.61\%} = \mathbf{0.32} \quad (68\%\text{ lower risk})$$
+
+---
+
+## 4. Statistical Inferential Testing & Mathematical Proofs
+
+To establish that observed risk differences across borrower segments are statistically significant and practically meaningful (rather than random artifacts), four rigorous inferential tests were executed in [`notebooks/03_credit_risk_analysis.ipynb`](notebooks/03_credit_risk_analysis.ipynb):
+
+### 4.1 Chi-Square Test of Independence ($\chi^2$) for Underwriting Risk Grades
+Tests the null hypothesis that underwriting risk grade and terminal loan outcome are statistically independent:
+
+$$\chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}$$
+
+- **Observed ($O$) vs. Expected ($E$) Contingency Matrix ($7 \times 2$):**
+  - Degrees of Freedom: $\text{df} = (r - 1)(c - 1) = (7 - 1)(2 - 1) = 6$
+  - Test Statistic: $\chi^2 = \mathbf{33,548.81}$
+  - p-value: $p < \mathbf{10^{-300}}$ (reject $H_0$ at $\alpha = 0.001$)
+
+#### Cramer's V Effect Size Formulation:
+$$V = \sqrt{\frac{\chi^2}{N \cdot (\min(r, c) - 1)}} = \sqrt{\frac{33,548.81}{396,030 \cdot (2 - 1)}} = \sqrt{0.084713} = \mathbf{0.2911}$$
+
+*Conclusion: A Cramer's $V$ of **0.2911** indicates a moderate-to-strong practical association between assigned credit grade and eventual terminal default.*
+
+---
+
+### 4.2 Two-Sample Mann-Whitney U Test & Cohen's d for Contract Interest Rates
+Tests whether borrowers who defaulted were charged systematically higher interest rates at origination:
+
+- **Paid Cohort:** Mean rate $\bar{X}_1 = 13.14\%$, Median $= 12.99\%$, Variance $s_1^2 = 19.45$, $n_1 = 318,357$.
+- **Default Cohort:** Mean rate $\bar{X}_2 = 15.71\%$, Median $= 15.61\%$, Variance $s_2^2 = 19.18$, $n_2 = 77,673$.
+- **Rate Spread:** $\Delta = \bar{X}_2 - \bar{X}_1 = \mathbf{+2.57\%}$ (+257 basis points).
+- **Mann-Whitney Statistic:** $U = \mathbf{1.63 \times 10^{10}}$, $p < \mathbf{10^{-300}}$.
+
+#### Pooled Standard Deviation & Cohen's d Effect Size:
+$$s_{\text{pooled}} = \sqrt{\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}} = \sqrt{\frac{318,356(19.45) + 77,672(19.18)}{396,028}} = \mathbf{4.398\%}$$
+
+$$d = \frac{\bar{X}_2 - \bar{X}_1}{s_{\text{pooled}}} = \frac{15.71 - 13.14}{4.398} = \frac{2.57}{4.398} = \mathbf{0.5844}$$
+
+*Conclusion: Cohen's $d = \mathbf{0.5844}$ represents a substantial medium effect size, confirming that pricing differences are both statistically robust and economically meaningful.*
+
+---
+
+### 4.3 Binomial Confidence Intervals (Wilson Score Interval)
+Calculates exact asymmetric 95% confidence bounds for binomial default proportions across risk grades without assuming normal distribution approximations:
+
+$$\text{CI} = \frac{p + \frac{z^2}{2n} \pm z\sqrt{\frac{p(1-p)}{n} + \frac{z^2}{4n^2}}}{1 + \frac{z^2}{n}}$$
+
+*Where $z = 1.95996$ for a 95% two-sided confidence interval.*
+
+#### Worked Examples:
+- **Grade A ($n = 64,187, k = 4,037, p = 0.06289$):**
+  $$\text{CI}_{95\%} = [\mathbf{6.10\%}, \mathbf{6.48\%}] \quad (\text{Margin of Error} = \pm 0.19\%)$$
+- **Grade G ($n = 3,054, k = 1,400, p = 0.45841$):**
+  $$\text{CI}_{95\%} = [\mathbf{44.07\%}, \mathbf{47.62\%}] \quad (\text{Margin of Error} = \pm 1.77\%)$$
+
+*Conclusion: Even at the smallest subprime sample size (Grade G with 3,054 facilities), the true population default rate is bounded above 44.0%, proving that high subprime default rates are not small-sample artifacts.*
+
+---
+
+## 5. Credit Risk Decision & Underwriting Flowchart
+
+The following flowchart illustrates the proposed strategic underwriting rules derived from the analytical findings:
+
+```mermaid
+flowchart TD
+    Start["Loan Application Received"] --> Scorecard["Underwriting Scorecard Evaluation"]
+    Scorecard --> GradeCheck{"Risk Grade Assigned"}
+    GradeCheck -->|Grade A or B| PrimeTier["Prime Tier (6.3% - 13.6% Default Rate)"]
+    GradeCheck -->|Grade C or D| NearPrime["Standard / Near-Prime (21.8% - 28.7% Default Rate)"]
+    GradeCheck -->|Grade E, F, or G| Subprime["Deep Subprime (37.4% - 45.8% Default Rate)"]
+    
+    PrimeTier --> TermCheckPrime{"Facility Term"}
+    TermCheckPrime -->|36 Months| ApprovePrime36["Approve Standard: 11.4% Default Risk"]
+    TermCheckPrime -->|60 Months| ApprovePrime60["Approve with Spread (+150 bps): 21.8% Risk"]
+    
+    NearPrime --> DTICheckNear{"Borrower DTI Leverage"}
+    DTICheckNear -->|DTI < 20%| ApproveNear["Approve Facility (Max $25,000)"]
+    DTICheckNear -->|DTI >= 20%| HardCapNear["Mandate Verified Income & Escalate Underwriting"]
+    
+    Subprime --> PolicyDecision{"Credit Policy Recommendation"}
+    PolicyDecision -->|60-Month Request| AutoDecline60["Decline 60m Term: 41.4% Loss Rate Protection"]
+    PolicyDecision -->|36-Month & DTI > 20%| DeclineHighDTI["Decline: Excessive Financial Vulnerability"]
+    PolicyDecision -->|36-Month & DTI <= 20%| RestrictSubprime["Conditional Approval: Max $10,000, 25%+ Yield"]
+```
+
+---
+
+## 6. Interactive Visual Intelligence Dashboards
 
 ### Visual 1: Executive Portfolio Overview
 *Strategic macro briefing tracking origination expansion, terminal repayment status composition, primary loan purpose allocations, and capital deployment across internal underwriting risk grades.*
 <p align="center">
   <img src="reports/screenshots/01_executive_portfolio_overview.png" alt="Executive Portfolio Overview" width="95%">
 </p>
-
-- **Origination Expansion**: Exponential post-2008 recovery expansion, scaling from under $50M in 2007 to over $1.7B in 2015.
-- **Terminal Status Split**: 80.39% Performing Full Repayment vs. 19.61% Terminal Default Write-Off.
-- **Core Product Mix**: Heavy concentration in debt refinancing (`debt_consolidation` at $3.31B and `credit_card` at $1.14B).
-- **Capital Allocation by Grade**: 47.8% of portfolio capital allocated to prime tiers (Grades A & B).
 
 ---
 
@@ -80,11 +230,6 @@ FinSight 360 includes three high-resolution visual dashboards matching executive
   <img src="reports/screenshots/02_credit_risk_segmentation.png" alt="Credit Risk Segmentation" width="95%">
 </p>
 
-- **Grade Escalation**: Strict monotonic risk progression from **6.29%** in Grade A to **45.84%** in Grade G.
-- **Purpose Risk Premium**: Small business loans display the highest default rate (**29.45%**) among all major sectors.
-- **Leverage Inflection Point**: Observed default rate accelerates once monthly debt obligations exceed **20% DTI**.
-- **Exposure Matrix (Quadrant Scatter)**: Visualizes dollar exposure vs. default rate, confirming that debt consolidation poses the largest absolute loss exposure ($686M).
-
 ---
 
 ### Visual 3: Portfolio Vintages & Automated Data Quality Scorecard
@@ -93,114 +238,79 @@ FinSight 360 includes three high-resolution visual dashboards matching executive
   <img src="reports/screenshots/03_portfolio_vintages_and_data_quality.png" alt="Vintages and Data Quality" width="95%">
 </p>
 
-- **Vintage Trajectory**: Vintages 2011–2014 matured into stable ~18%–20% default rates following early post-crisis calibration.
-- **Pricing Dispersion**: Nominal interest rates scale cleanly with credit grade, spanning from 5.3% (Grade A) to 31.0% (Grade G).
-- **Data Quality Compliance**: 10 of 12 rules passed with 100% compliance; exactly 1 zero-income anomaly isolated; 8 extreme DTI outliers flagged.
+---
+
+## 7. Comprehensive Quantitative Tables & Breakdowns
+
+### 7.1 Underwriting Risk Grade Performance Matrix (Grades A to G)
+
+| Risk Grade | Facility Count | Volume Share (%) | Total Capital Funded ($) | Average Ticket ($) | Average Rate (%) | Average DTI | Charged Off Count | Observed Default Rate (%) | Risk Index vs Baseline |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **A** | 64,187 | 16.21% | $905,716,725.00 | $14,110.60 | 7.33% | 14.50 | 4,037 | **6.29%** | **0.32x** |
+| **B** | 116,018 | 29.29% | $1,570,642,850.00 | $13,537.92 | 10.66% | 16.73 | 15,744 | **13.57%** | **0.69x** |
+| **C** | 105,987 | 26.76% | $1,507,046,300.00 | $14,219.16 | 14.01% | 17.92 | 23,149 | **21.84%** | **1.11x** |
+| **D** | 63,524 | 16.04% | $923,594,475.00 | $14,539.29 | 17.18% | 18.73 | 18,218 | **28.68%** | **1.46x** |
+| **E** | 31,488 | 7.95% | $501,940,325.00 | $15,940.69 | 19.95% | 19.42 | 11,765 | **37.36%** | **1.91x** |
+| **F** | 11,772 | 2.97% | $236,664,575.00 | $20,104.02 | 23.58% | 19.34 | 4,970 | **42.22%** | **2.15x** |
+| **G** | 3,054 | 0.77% | $43,917,525.00 | $14,380.33 | 25.61% | 19.82 | 1,400 | **45.84%** | **2.34x** |
+| **Total** | **396,030** | **100.00%** | **$5,589,522,775.00** | **$14,113.89** | **13.64%** | **17.38** | **77,673** | **19.61%** | **1.00x** |
 
 ---
 
-## 3. Key Evidence-Based Analytical Findings
+### 7.2 Term Structure Risk Disparity (36-Month vs. 60-Month Facilities)
 
-Detailed reports are documented in [reports/business_findings.md](reports/business_findings.md) and [reports/executive_summary.md](reports/executive_summary.md):
-
-1. **Risk Grade Monotonicity & Subprime Drag**:
-   - Default rates escalate from **6.29%** (Grade A) to **45.84%** (Grade G).
-   - Grades E, F, and G comprise **$722.5M (12.93%)** of portfolio exposure, yet drive **27.64% (21,465 facilities)** of all default events. High subprime contractual rates (25.6%) are mathematically insufficient to absorb a 45.8% principal loss.
-2. **The 60-Month Facility Term Risk Multiplier**:
-   - 60-month facilities exhibit a **31.74%** default rate vs **16.00%** on 36-month facilities (**1.98x higher risk**).
-   - Grade B 60-month loans experience a higher default rate (**21.84%**) than Grade C 36-month loans (**18.72%**). Eliminating 60-month terms for Grades D–G protects an estimated **$180M** in balance sheet capital.
-3. **Debt-to-Income (DTI) Leverage Inflection at 20%**:
-   - Default rates remain stable below 15% DTI (14.3%–16.6%), but spike to **22.51%** for DTI 20%–25% and **24.58%** for DTI > 30%.
-4. **Commercial / Small Business Volatility**:
-   - Small business facilities exhibit the highest default rate (**29.45%**) of any major purpose category (+984 bps above portfolio baseline). Underwriting commercial ventures using consumer personal scorecards produces severe adverse selection.
-5. **Geographic Concentration Risk**:
-   - Over **37%** of portfolio exposure is concentrated across 4 anchor states: California ($787M | 14.1%), New York ($460M | 8.2%), Texas ($448M | 8.0%), and Florida ($378M | 6.8%).
+| Risk Grade | 36m Count | 36m Default Rate (%) | 60m Count | 60m Default Rate (%) | Term Risk Multiplier (60m vs 36m) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **A** | 61,048 | **5.74%** | 3,139 | **16.92%** | **2.95x** |
+| **B** | 98,187 | **11.44%** | 17,831 | **21.84%** | **1.91x** |
+| **C** | 77,592 | **18.72%** | 28,395 | **30.56%** | **1.63x** |
+| **D** | 41,757 | **25.29%** | 21,767 | **35.79%** | **1.42x** |
+| **E** | 16,846 | **33.39%** | 14,642 | **41.44%** | **1.24x** |
+| **F** | 5,340 | **37.81%** | 6,432 | **45.88%** | **1.21x** |
+| **G** | 1,235 | **41.13%** | 1,819 | **49.04%** | **1.19x** |
+| **Total** | **302,005** | **16.00%** | **94,025** | **31.74%** | **1.98x** |
 
 ---
 
-## 4. Technology Stack & Repository Architecture
+### 7.3 Loan Purpose Exposure & Default Ranking (All 14 Stated Categories)
 
-```
-finsight-360/
-|-- README.md                               # Primary project documentation
-|-- requirements.txt                        # Pinned dependencies
-|-- docker-compose.yml                      # PostgreSQL 16 container definition
-|-- .env.example                            # Database credentials template
-|-- LICENSE                                 # MIT License
-|
-|-- config/
-|   |-- config.yaml                         # Production pipeline configuration
-|   |-- config.example.yaml                 # Template configuration
-|
-|-- data/
-|   |-- README.md                           # Dataset selection note & data dictionary
-|   |-- raw/                                # Raw LendingClub source CSVs
-|   |-- processed/                          # Parquet extracts & SQLite database
-|   |-- sample/loans_sample.csv             # 25,000-row stratified sample (seed 42) for fast CI
-|
-|-- notebooks/
-|   |-- 01_data_understanding.ipynb         # Schema profiling & missingness analysis
-|   |-- 02_exploratory_analysis.ipynb       # Bivariate analysis & feature distributions
-|   |-- 03_credit_risk_analysis.ipynb       # Statistical testing & baseline model
-|   |-- 04_business_findings.ipynb          # Strategic synthesis & executive memo
-|
-|-- src/
-|   |-- ingest.py                           # Schema validation and metadata tracking
-|   |-- clean.py                            # Non-destructive data cleaning & regex parsing
-|   |-- transform.py                        # Risk banding (loan amount, income, DTI, rate bands)
-|   |-- validate.py                         # Automated 12-rule Data Quality framework
-|   |-- database.py                         # Dual-engine DB loader (PostgreSQL & SQLite)
-|   |-- metrics.py                          # Portfolio KPI & cross-layer reconciliation engine
-|   |-- reporting.py                        # Automated dashboard screenshot generator
-|
-|-- sql/
-|   |-- 01_schema.sql                       # Star schema DDL tables
-|   |-- 02_constraints_indexes.sql          # Constraints, foreign keys & analytical indexes
-|   |-- 03_staging_views.sql                # Staging profiling views
-|   |-- 04_analytical_views.sql             # Business KPI views (v_portfolio_summary, v_risk_grade)
-|   |-- 05_business_queries.sql             # 25 production analytical business queries
-|   |-- 06_data_quality.sql                 # SQL test queries for data health
-|   |-- 07_reconciliation.sql               # Staging vs Fact layer reconciliation
-|
-|-- powerbi/
-|   |-- README.md                           # Power BI overview & build instructions
-|   |-- data_model.md                       # Star schema model & relationship specification
-|   |-- dax_measures.md                     # 18 documented DAX measures with DIVIDE safety
-|   |-- dashboard_specification.md          # 3-page visual wireframes & layout rules
-|   |-- data_exports/                       # CSV tables ready for Power BI Desktop import
-|
-|-- excel/
-|   |-- README.md                           # Workbook user guide
-|   |-- report_specification.md             # Cell mappings & formula documentation
-|   |-- FinSight_360_Executive_Report.xlsx  # 6-sheet formatted executive workbook
-|
-|-- reports/
-|   |-- executive_summary.md                # Management memo to CRO & Credit Committee
-|   |-- business_findings.md                # Structured evidence-based findings
-|   |-- data_quality_report.md              # 12-rule audit log & forensics
-|   |-- methodology.md                      # Analytical & statistical methodology
-|   |-- limitations.md                      # Governance boundaries & constraints
-|   |-- interview_guide.md                  # 18 interview questions + 60s pitch + 3min walkthrough
-|   |-- screenshots/                        # High-resolution dashboard figures
-|
-|-- tests/
-|   |-- test_cleaning.py                    # Unit tests for cleaning & parsing
-|   |-- test_metrics.py                     # Unit tests for KPI calculations
-|   |-- test_data_quality.py                # Unit tests for validation rules
-|   |-- test_reconciliation.py              # Cross-layer mathematical parity tests
-|
-|-- .github/workflows/tests.yml             # GitHub Actions CI workflow
-`-- scripts/
-    |-- setup_database.py                   # DB initialization & static dimensions
-    |-- run_pipeline.py                     # End-to-end execution pipeline
-    |-- generate_sample.py                  # Stratified sampling utility
-    |-- build_notebooks.py                  # Notebook generator
-    `-- build_excel_report.py               # Excel workbook generator
-```
+| Loan Purpose Category | Facility Count | Total Exposure ($) | Exposure Share (%) | Average Ticket ($) | Average Rate (%) | Defaulted Count | Observed Default Rate (%) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **debt_consolidation** | 234,510 | $3,308,822,850.00 | 59.20% | $14,109.52 | 13.88% | 48,608 | **20.73%** |
+| **credit_card** | 83,019 | $1,135,042,200.00 | 20.31% | $13,672.08 | 11.95% | 13,923 | **16.77%** |
+| **home_improvement** | 24,030 | $335,745,225.00 | 6.01% | $13,971.92 | 13.19% | 4,087 | **17.01%** |
+| **other** | 21,185 | $220,131,800.00 | 3.94% | $10,390.93 | 14.83% | 4,468 | **21.09%** |
+| **major_purchase** | 8,786 | $92,028,875.00 | 1.65% | $10,474.49 | 12.82% | 1,441 | **16.40%** |
+| **small_business** | 5,701 | $90,186,850.00 | 1.61% | $15,819.48 | 15.74% | 1,679 | **29.45%** |
+| **car** | 4,697 | $37,975,450.00 | 0.68% | $8,085.04 | 12.06% | 633 | **13.48%** |
+| **medical** | 4,196 | $36,042,500.00 | 0.64% | $8,589.73 | 14.19% | 911 | **21.71%** |
+| **moving** | 2,854 | $20,865,025.00 | 0.37% | $7,310.80 | 15.22% | 667 | **23.37%** |
+| **vacation** | 2,452 | $13,612,775.00 | 0.24% | $5,551.70 | 13.79% | 465 | **18.96%** |
+| **house** | 2,201 | $28,958,725.00 | 0.52% | $13,157.08 | 15.25% | 426 | **19.35%** |
+| **wedding** | 1,812 | $18,349,275.00 | 0.33% | $10,126.53 | 12.39% | 218 | **12.03%** |
+| **renewable_energy** | 329 | $3,189,475.00 | 0.06% | $9,694.45 | 14.61% | 77 | **23.40%** |
+| **educational** | 258 | $1,712,700.00 | 0.03% | $6,638.37 | 12.18% | 41 | **15.89%** |
 
 ---
 
-## 5. Data Quality & Governance Audit Scorecard
+### 7.4 Geographic Concentration (Top 10 US States by Exposure)
+
+| US State | Facility Count | Total Capital Funded ($) | National Exposure Share (%) | Average Ticket ($) | Observed Default Rate (%) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **CA** | 55,594 | $787,249,700.00 | **14.08%** | $14,160.69 | **19.82%** |
+| **NY** | 32,878 | $460,469,050.00 | **8.24%** | $14,005.39 | **20.83%** |
+| **TX** | 31,768 | $447,819,450.00 | **8.01%** | $14,096.56 | **19.34%** |
+| **FL** | 27,249 | $378,111,000.00 | **6.76%** | $13,876.14 | **20.21%** |
+| **IL** | 15,907 | $228,806,625.00 | **4.09%** | $14,384.02 | **19.50%** |
+| **NJ** | 14,845 | $215,961,825.00 | **3.86%** | $14,547.78 | **19.99%** |
+| **PA** | 13,877 | $191,962,600.00 | **3.43%** | $13,833.15 | **19.26%** |
+| **OH** | 13,121 | $179,067,425.00 | **3.20%** | $13,647.40 | **19.82%** |
+| **GA** | 12,949 | $183,923,450.00 | **3.29%** | $14,203.68 | **19.48%** |
+| **VA** | 11,878 | $172,525,275.00 | **3.09%** | $14,524.77 | **18.77%** |
+
+---
+
+## 8. Automated 12-Rule Data Quality & Governance Scorecard
 
 In `src/validate.py`, the platform executes an automated 12-rule validation audit across all 396,030 ingested records, logging results to `reports/data_quality_results.csv` and database table `dq_audit_log`:
 
@@ -221,7 +331,7 @@ In `src/validate.py`, the platform executes an automated 12-rule validation audi
 
 ---
 
-## 6. Database Modeling & Analytical Star Schema
+## 9. Relational Star Schema Database Modeling
 
 The database architecture is documented in [powerbi/data_model.md](powerbi/data_model.md) and implemented in [sql/01_schema.sql](sql/01_schema.sql):
 
@@ -268,7 +378,7 @@ The database architecture is documented in [powerbi/data_model.md](powerbi/data_
 
 ---
 
-## 7. Analytical SQL Query Library (25 Business Queries)
+## 10. Analytical SQL Query Library (25 Verified Queries)
 
 All 25 SQL queries in [sql/05_business_queries.sql](sql/05_business_queries.sql) have been tested and verified against the live database:
 
@@ -302,31 +412,23 @@ All 25 SQL queries in [sql/05_business_queries.sql](sql/05_business_queries.sql)
 
 ---
 
-## 8. Python Statistical Testing & Scorecard Modeling
+## 11. Cross-Layer Mathematical Reconciliation (0.00 Discrepancy)
 
-Notebooks are located in `notebooks/`:
-- `notebooks/01_data_understanding.ipynb`: Ingestion, schema profiling, and missingness analysis.
-- `notebooks/02_exploratory_analysis.ipynb`: Bivariate feature distributions across repayment statuses.
-- `notebooks/03_credit_risk_analysis.ipynb`: Inferential statistical tests and scorecard modeling.
-- `notebooks/04_business_findings.ipynb`: Synthesis, scatter exposure matrix, and executive memo.
+To guarantee that calculations are consistent across the technology stack, the platform verifies reconciliation between Python, SQL, and Excel:
 
-### Inferential Statistical Test Results
-
-| Test Description | Null Hypothesis ($H_0$) | Test Statistic | p-value | Effect Size | Analytical Conclusion |
-| :--- | :--- | :---: | :---: | :---: | :--- |
-| **Chi-Square Independence** (Risk Grade vs Default) | Grade and Loan Outcome are statistically independent. | $\chi^2 = 33,548.81$ | $< 10^{-300}$ | Cramer's $V = 0.291$ | **Reject $H_0$**: Highly significant practical association. |
-| **Chi-Square Independence** (Term Length vs Default) | Term Length and Outcome are statistically independent. | $\chi^2 = 11,465.12$ | $< 10^{-300}$ | Cramer's $V = 0.170$ | **Reject $H_0$**: Significant term-duration risk penalty. |
-| **Mann-Whitney U Test** (Interest Rate Spread) | Paid and Default cohorts have identical rate distributions. | $U = 1.63 \times 10^{10}$ | $< 10^{-300}$ | Cohen's $d = 0.584$ | **Reject $H_0$**: Defaulting cohort paid +2.57% higher rate. |
-| **Mann-Whitney U Test** (DTI Leverage Spread) | Paid and Default cohorts have identical DTI distributions. | $U = 1.41 \times 10^{10}$ | $< 10^{-300}$ | Cohen's $d = 0.264$ | **Reject $H_0$**: Defaulting cohort had higher leverage. |
-
-### Leakage-Free Predictive Scorecard Baseline
-In `notebooks/03_credit_risk_analysis.ipynb`, an honest logistic regression baseline was trained using strictly origination-time predictors (`loan_amnt`, `int_rate`, `dti`, `annual_inc`, `installment_burden_pct`, `credit_history_years`), strictly avoiding post-origination leakage fields:
-- **Held-Out Test Sample**: 20% stratified test split (79,206 facilities).
-- **ROC-AUC Score**: **0.692**, aligning with standard unsecured retail banking underwriting scorecards prior to integrating comprehensive credit bureau tradeline files.
+| Benchmark Metric | Python Calculation | SQL Analytical View | Excel Management Model | Absolute Delta ($\Delta$) | Audit Parity Verdict |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Total Loan Count** | 396,030 | 396,030 | 396,030 | **0.0000** | **100% MATCH** |
+| **Total Exposure ($)** | $5,589,522,775.00 | $5,589,522,775.00 | $5,589,522,775.00 | **0.0000** | **100% MATCH** |
+| **Average Loan Amount ($)** | $14,113.89 | $14,113.89 | $14,113.89 | **0.0000** | **100% MATCH** |
+| **Charged Off Count** | 77,673 | 77,673 | 77,673 | **0.0000** | **100% MATCH** |
+| **Fully Paid Count** | 318,357 | 318,357 | 318,357 | **0.0000** | **100% MATCH** |
+| **Observed Default Rate (%)** | 19.6129% | 19.6100% | 19.61% | **0.0029% (rnd)** | **100% MATCH** |
+| **Defaulted Capital ($)** | $1,158,829,350.00 | $1,158,829,350.00 | $1,158,829,350.00 | **0.0000** | **100% MATCH** |
 
 ---
 
-## 9. Power BI Suite & DAX Measures
+## 12. Power BI Suite & DAX Measures
 
 The Power BI analytical model is documented in [powerbi/dax_measures.md](powerbi/dax_measures.md) and [powerbi/dashboard_specification.md](powerbi/dashboard_specification.md).
 
@@ -370,7 +472,7 @@ RETURN DIVIDE([Observed Default Rate], BaselineRate, 1.0)
 
 ---
 
-## 10. Executive Excel Management Model
+## 13. Institutional Management Excel Model
 
 The institutional workbook [`excel/FinSight_360_Executive_Report.xlsx`](excel/FinSight_360_Executive_Report.xlsx) was generated with openpyxl across 6 dedicated sheets:
 
@@ -385,7 +487,7 @@ The institutional workbook [`excel/FinSight_360_Executive_Report.xlsx`](excel/Fi
 
 ---
 
-## 11. Quickstart & Complete Reproducibility
+## 14. Quickstart & Complete Reproducibility
 
 ### Step 1: Clone the Repository
 ```bash
@@ -423,7 +525,7 @@ python scripts/setup_database.py
 
 ---
 
-## 12. Interview Guide & Presentation Pitch
+## 15. Interview Guide & Presentation Pitch
 
 Candidates presenting FinSight 360 can reference [reports/interview_guide.md](reports/interview_guide.md):
 - **60-Second Elevator Pitch**: High-level problem definition, portfolio scale, key discoveries, and strategic takeaways.
@@ -432,7 +534,7 @@ Candidates presenting FinSight 360 can reference [reports/interview_guide.md](re
 
 ---
 
-## 13. Governance Boundaries & Limitations
+## 16. Governance Boundaries & Limitations
 
 In compliance with banking model governance standards, detailed disclosures are documented in [reports/limitations.md](reports/limitations.md):
 - **Platform Demographics**: Findings reflect historical consumer unsecured marketplace facilities (2007–2016) skewed toward revolving credit refinancing (~80% exposure) and cannot be directly generalized to residential mortgages or commercial real estate.
