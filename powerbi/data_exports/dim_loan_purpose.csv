@@ -1,0 +1,15 @@
+purpose,purpose_group,is_refinancing
+debt_consolidation,Debt Refinancing,1
+credit_card,Debt Refinancing,1
+home_improvement,Home & Property,0
+house,Home & Property,0
+small_business,Commercial / Venture,0
+major_purchase,Consumer Durable,0
+car,Auto / Vehicle,0
+medical,Emergency / Healthcare,0
+moving,Lifestyle / Relocation,0
+vacation,Discretionary / Leisure,0
+wedding,Lifestyle / Event,0
+educational,Education,0
+renewable_energy,Green Energy,0
+other,Miscellaneous,0

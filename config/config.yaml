@@ -1,0 +1,39 @@
+# FinSight 360 Configuration
+project:
+  name: "FinSight 360"
+  description: "Banking Analytics & Credit Risk Intelligence Platform"
+  version: "1.0.0"
+
+paths:
+  raw_data: "data/raw/lending_club_loan_two.csv"
+  data_dictionary: "data/raw/lending_club_info.csv"
+  processed_data: "data/processed/lending_club_cleaned.parquet"
+  processed_csv: "data/processed/lending_club_cleaned.csv"
+  sample_data: "data/sample/loans_sample.csv"
+  db_path: "data/processed/finsight360.db"
+  dq_report_csv: "reports/data_quality_results.csv"
+  excel_report: "excel/FinSight_360_Executive_Report.xlsx"
+
+database:
+  engine: "sqlite"  # 'postgresql' or 'sqlite'
+  pg_host: "localhost"
+  pg_port: 5432
+  pg_database: "finsight360"
+  pg_user: "postgres"
+  pg_password: "password123"
+
+thresholds:
+  min_segment_sample_size: 100
+  max_plausible_int_rate: 35.0
+  min_plausible_int_rate: 4.0
+  max_plausible_loan_amount: 50000.0
+  min_plausible_loan_amount: 500.0
+  max_plausible_annual_inc: 5000000.0
+  min_plausible_annual_inc: 1000.0
+  max_plausible_dti: 100.0
+  min_plausible_dti: 0.0
+
+sampling:
+  sample_size: 25000
+  random_seed: 42
+  stratify_col: "loan_status"

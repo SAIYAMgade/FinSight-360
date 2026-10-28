@@ -1,0 +1,8 @@
+grade,risk_tier,prime_status,expected_loss_range
+A,Prime Low Risk,Prime,0% - 7%
+B,Near Prime,Prime,7% - 13%
+C,Standard Consumer,Non-Prime,13% - 22%
+D,Elevated Risk,Non-Prime,22% - 30%
+E,Subprime,Subprime,30% - 38%
+F,Deep Subprime,Subprime,38% - 45%
+G,High Default Risk,Subprime,45%+

@@ -1,0 +1,13 @@
+check_name,severity,records_checked,failures_found,failure_rate,result,details,timestamp
+DQ-001_REQUIRED_FIELDS_MISSING,CRITICAL,396030,0,0.0,PASS,"Required fields evaluated: ['loan_amnt', 'term', 'grade', 'annual_inc', 'issue_d', 'loan_status']",2026-10-28T10:46:45.087447+00:00
+DQ-002_UNIQUE_LOAN_IDENTIFIER,CRITICAL,396030,0,0.0,PASS,Checks uniqueness of primary surrogate key 'loan_id'.,2026-10-28T10:46:45.168094+00:00
+DQ-003_DUPLICATE_RECORDS,CRITICAL,396030,0,0.0,PASS,Checks for fully duplicate borrower and loan rows.,2026-10-28T10:46:46.425758+00:00
+DQ-004_LOAN_AMOUNT_RANGE,CRITICAL,396030,0,0.0,PASS,"Plausible range: $500 to $50,000.",2026-10-28T10:46:46.429390+00:00
+DQ-005_INTEREST_RATE_RANGE,CRITICAL,396030,0,0.0,PASS,Plausible nominal rate range: 4.0% to 35.0%.,2026-10-28T10:46:46.432426+00:00
+DQ-006_DATE_PARSING_INTEGRITY,CRITICAL,396030,0,0.0,PASS,Checks that issue date parses into valid Gregorian datetime.,2026-10-28T10:46:46.434644+00:00
+DQ-007_POSITIVE_ANNUAL_INCOME,CRITICAL,396030,1,0.0003,FAIL,Checks that self-reported annual income is positive and non-null.,2026-10-28T10:46:46.438373+00:00
+DQ-008_KNOWN_RISK_GRADES,CRITICAL,396030,0,0.0,PASS,"Permissible grades: ['A', 'B', 'C', 'D', 'E', 'F', 'G'].",2026-10-28T10:46:46.470535+00:00
+DQ-009_TARGET_VARIABLE_INTEGRITY,CRITICAL,396030,0,0.0,PASS,Target 'is_default' must be strictly binary 0 or 1 with 0 nulls.,2026-10-28T10:46:46.473214+00:00
+DQ-010_CHRONOLOGICAL_CREDIT_AGE,WARNING,396030,0,0.0,PASS,Earliest credit line date must precede or equal loan origination date.,2026-10-28T10:46:46.476779+00:00
+DQ-011_RECORD_RETENTION_INTEGRITY,INFORMATIONAL,396030,0,0.0,PASS,"Raw count: 396,030, Transformed count: 396,030.",2026-10-28T10:46:46.476845+00:00
+DQ-012_EXTREME_DTI_OUTLIERS,WARNING,396030,8,0.002,WARNING,"Borrowers with DTI exceeding 100.0%, indicating severe leverage.",2026-10-28T10:46:46.480124+00:00

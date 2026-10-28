@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: finsight360_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: finsight360
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/01_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./sql/02_constraints_indexes.sql:/docker-entrypoint-initdb.d/02_constraints_indexes.sql:ro
+      - ./sql/03_staging_views.sql:/docker-entrypoint-initdb.d/03_staging_views.sql:ro
+      - ./sql/04_analytical_views.sql:/docker-entrypoint-initdb.d/04_analytical_views.sql:ro
+
+volumes:
+  pgdata:
