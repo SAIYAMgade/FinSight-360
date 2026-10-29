@@ -30,10 +30,11 @@
 10. [Analytical SQL Query Library (25 Verified Queries)](#10-analytical-sql-query-library-25-verified-queries)
 11. [Cross-Layer Mathematical Reconciliation (0.00 Discrepancy)](#11-cross-layer-mathematical-reconciliation-000-discrepancy)
 12. [Power BI Suite & DAX Measures](#12-power-bi-suite--dax-measures)
-13. [Institutional Management Excel Model](#13-institutional-management-excel-model)
-14. [Quickstart & Complete Reproducibility](#14-quickstart--complete-reproducibility)
-15. [Interview Guide & Presentation Pitch](#15-interview-guide--presentation-pitch)
-16. [Governance Boundaries & Limitations](#16-governance-boundaries--limitations)
+13. [Tableau Public Dashboard](#13-tableau-public-dashboard)
+14. [Institutional Management Excel Model](#14-institutional-management-excel-model)
+15. [Quickstart & Complete Reproducibility](#15-quickstart--complete-reproducibility)
+16. [Interview Guide & Presentation Pitch](#16-interview-guide--presentation-pitch)
+17. [Governance Boundaries & Limitations](#17-governance-boundaries--limitations)
 
 ---
 
@@ -472,7 +473,39 @@ RETURN DIVIDE([Observed Default Rate], BaselineRate, 1.0)
 
 ---
 
-## 13. Institutional Management Excel Model
+## 13. Tableau Public Dashboard
+
+[![Tableau Public Dashboard](docs/images/tableau_dashboard.png)](<TABLEAU_PUBLIC_URL>)
+
+> **Tableau Public Link:** [<TABLEAU_PUBLIC_URL>](<TABLEAU_PUBLIC_URL>) *(Workbook build spec and CSV exports ready; awaiting manual author publication to Tableau Public Desktop)*  
+> **Build Specification:** [`docs/tableau_dashboard_spec.md`](docs/tableau_dashboard_spec.md)  
+> **Export Verification Report:** [`tableau_data/VERIFICATION.md`](tableau_data/VERIFICATION.md)
+
+FinSight 360 includes an executive Tableau Public dashboard architecture engineered for public cloud dissemination without exposing internal database credentials.
+
+### Data Source & Governance
+- **Data Provenance:** Public LendingClub consumer installment lending dataset spanning resolved loan contracts originated between June 2007 and December 2016.
+- **Privacy & Anonymization:** 100% pre-aggregated dimensional summaries (`tableau_data/*.csv`). Zero personally identifiable information (PII)—no borrower names, social security numbers, street addresses, or individual IDs are exported.
+- **Scope Parity:** Supported across both the production 396,030-loan historical population and the 25,000-loan deterministic stratified sample (`powerbi/data_exports/fact_loans_sample_25k.csv`).
+
+### Implemented Metric Definitions
+1. **Delinquency Rate (Observed Default Rate - ODR):** Unweighted proportion of resolved facilities resulting in terminal write-off:
+   $$\text{Delinquency Rate} = \frac{\sum \mathbb{I}(\text{loan\_status} = \text{'Charged Off'})}{N}$$
+   *(Note: Because this dataset contains strictly completed historical facilities, early-stage in-flight delinquency [30–90 DPD] is absent; the portfolio reflects terminal default outcomes.)*
+2. **NPL Ratio (Defaulted Exposure Share - DES):** Dollar-weighted capital credit loss proportion:
+   $$\text{NPL Ratio} = \frac{\sum \text{loan\_amnt} \cdot \mathbb{I}(\text{loan\_status} = \text{'Charged Off'})}{\sum \text{loan\_amnt}}$$
+3. **Risk Tier Hierarchy:** 7 institutional risk tiers in `dim_risk_grade` mapping to underwriting letter grades A through G (`Prime Low Risk`, `Near Prime`, `Standard Consumer`, `Elevated Risk`, `Subprime`, `Deep Subprime`, `High Default Risk`).
+4. **Portfolio Concentration:** Measures capital concentration in dominant loan purposes (`debt_consolidation` at 59.2%–62.2% and `credit_card` at 21.2%–22.0%), alongside high-risk purpose segments exceeding 1.25x baseline credit loss.
+
+### Export Generation Command
+To regenerate all 4 aggregated CSV exports and execute the automated verification audit with one command:
+```bash
+python scripts/export_tableau_data.py
+```
+
+---
+
+## 14. Institutional Management Excel Model
 
 The institutional workbook [`excel/FinSight_360_Executive_Report.xlsx`](excel/FinSight_360_Executive_Report.xlsx) was generated with openpyxl across 6 dedicated sheets:
 
@@ -487,7 +520,7 @@ The institutional workbook [`excel/FinSight_360_Executive_Report.xlsx`](excel/Fi
 
 ---
 
-## 14. Quickstart & Complete Reproducibility
+## 15. Quickstart & Complete Reproducibility
 
 ### Step 1: Clone the Repository
 ```bash
@@ -525,7 +558,7 @@ python scripts/setup_database.py
 
 ---
 
-## 15. Interview Guide & Presentation Pitch
+## 16. Interview Guide & Presentation Pitch
 
 Candidates presenting FinSight 360 can reference [reports/interview_guide.md](reports/interview_guide.md):
 - **60-Second Elevator Pitch**: High-level problem definition, portfolio scale, key discoveries, and strategic takeaways.
@@ -534,7 +567,7 @@ Candidates presenting FinSight 360 can reference [reports/interview_guide.md](re
 
 ---
 
-## 16. Governance Boundaries & Limitations
+## 17. Governance Boundaries & Limitations
 
 In compliance with banking model governance standards, detailed disclosures are documented in [reports/limitations.md](reports/limitations.md):
 - **Platform Demographics**: Findings reflect historical consumer unsecured marketplace facilities (2007–2016) skewed toward revolving credit refinancing (~80% exposure) and cannot be directly generalized to residential mortgages or commercial real estate.

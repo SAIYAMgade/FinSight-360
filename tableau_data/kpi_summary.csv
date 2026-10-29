@@ -1,0 +1,2 @@
+total_loans,total_borrowers,total_exposure,avg_loan_size,overall_delinquency_rate,overall_npl_ratio,number_of_risk_tiers,concentration_percentage,high_risk_concentration_pct
+25000,25000,352408550.0,14096.34,19.54,21.0312,7,62.1962,30.1948

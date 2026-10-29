@@ -1,0 +1,576 @@
+segment,purpose_group,origination_year,risk_tier,loan_count,total_exposure,avg_loan_size,charged_off_count,charged_off_exposure,delinquency_rate,npl_ratio,share_of_total_exposure,is_high_exposure_segment,is_high_risk_segment
+debt_consolidation,Debt Refinancing,2013,Near Prime,1327,18079700.0,13624.49,139,1878250.0,10.4748,10.3887,5.1303,1,0
+debt_consolidation,Debt Refinancing,2014,Standard Consumer,1176,16850000.0,14328.23,271,3857675.0,23.0442,22.8942,4.7814,1,0
+debt_consolidation,Debt Refinancing,2015,Standard Consumer,1095,16148075.0,14747.1,271,3904975.0,24.7489,24.1823,4.5822,1,0
+debt_consolidation,Debt Refinancing,2013,Standard Consumer,1049,15359575.0,14642.11,178,2782750.0,16.9685,18.1174,4.3585,1,0
+debt_consolidation,Debt Refinancing,2014,Near Prime,1044,13612900.0,13039.18,151,1846825.0,14.4636,13.5667,3.8628,1,0
+debt_consolidation,Debt Refinancing,2015,Near Prime,894,12428175.0,13901.76,133,1882825.0,14.877,15.1496,3.5266,1,0
+debt_consolidation,Debt Refinancing,2014,Elevated Risk,761,12177400.0,16001.84,241,3837300.0,31.6689,31.5117,3.4555,1,0
+debt_consolidation,Debt Refinancing,2015,Elevated Risk,667,10320200.0,15472.56,245,3825850.0,36.7316,37.0715,2.9285,1,0
+credit_card,Debt Refinancing,2013,Near Prime,662,9024575.0,13632.29,71,870975.0,10.7251,9.6511,2.5608,1,0
+debt_consolidation,Debt Refinancing,2015,Subprime,435,8304100.0,19089.89,183,3337225.0,42.069,40.1877,2.3564,1,0
+debt_consolidation,Debt Refinancing,2013,Elevated Risk,535,7697050.0,14387.01,144,2152875.0,26.9159,27.9701,2.1841,1,0
+debt_consolidation,Debt Refinancing,2014,Prime Low Risk,505,7621500.0,15092.08,26,330350.0,5.1485,4.3344,2.1627,1,0
+credit_card,Debt Refinancing,2014,Near Prime,515,6919100.0,13435.15,70,971125.0,13.5922,14.0354,1.9634,1,0
+debt_consolidation,Debt Refinancing,2015,Prime Low Risk,464,6771250.0,14593.21,29,385425.0,6.25,5.6921,1.9214,1,0
+debt_consolidation,Debt Refinancing,2013,Prime Low Risk,422,6763025.0,16026.13,19,275250.0,4.5024,4.0699,1.9191,1,0
+debt_consolidation,Debt Refinancing,2014,Subprime,378,6563000.0,17362.43,148,2460525.0,39.1534,37.4909,1.8623,1,0
+debt_consolidation,Debt Refinancing,2012,Near Prime,519,6344400.0,12224.28,63,820525.0,12.1387,12.9331,1.8003,1,0
+credit_card,Debt Refinancing,2014,Standard Consumer,383,5654450.0,14763.58,102,1480700.0,26.6319,26.1865,1.6045,1,0
+credit_card,Debt Refinancing,2013,Standard Consumer,399,5587325.0,14003.32,71,1016725.0,17.7945,18.197,1.5855,1,0
+credit_card,Debt Refinancing,2015,Near Prime,352,5127650.0,14567.19,64,983100.0,18.1818,19.1725,1.455,1,0
+credit_card,Debt Refinancing,2015,Standard Consumer,318,4998950.0,15719.97,84,1246750.0,26.4151,24.9402,1.4185,1,0
+credit_card,Debt Refinancing,2014,Prime Low Risk,358,4987375.0,13931.22,38,530750.0,10.6145,10.6419,1.4152,1,0
+debt_consolidation,Debt Refinancing,2016,Standard Consumer,313,4788950.0,15300.16,51,750625.0,16.2939,15.6741,1.3589,1,0
+credit_card,Debt Refinancing,2015,Prime Low Risk,303,4475225.0,14769.72,13,229975.0,4.2904,5.1388,1.2699,1,0
+credit_card,Debt Refinancing,2013,Prime Low Risk,293,4410250.0,15052.05,18,279350.0,6.1433,6.3341,1.2515,1,0
+debt_consolidation,Debt Refinancing,2012,Standard Consumer,337,4371800.0,12972.7,71,1055125.0,21.0682,24.1348,1.2405,1,0
+debt_consolidation,Debt Refinancing,2013,Subprime,208,3939525.0,18940.02,69,1480075.0,33.1731,37.5699,1.1179,1,0
+debt_consolidation,Debt Refinancing,2012,Elevated Risk,223,3550575.0,15921.86,58,986825.0,26.009,27.7934,1.0075,1,0
+debt_consolidation,Debt Refinancing,2016,Near Prime,249,3334425.0,13391.27,14,208000.0,5.6225,6.238,0.9462,1,0
+debt_consolidation,Debt Refinancing,2015,Deep Subprime,147,3259425.0,22172.96,77,1732200.0,52.381,53.1443,0.9249,1,0
+credit_card,Debt Refinancing,2014,Elevated Risk,169,3017175.0,17853.11,72,1336775.0,42.6036,44.3055,0.8562,1,0
+debt_consolidation,Debt Refinancing,2016,Elevated Risk,159,2679600.0,16852.83,33,622325.0,20.7547,23.2245,0.7604,1,0
+debt_consolidation,Debt Refinancing,2012,Prime Low Risk,224,2600300.0,11608.48,19,252675.0,8.4821,9.7171,0.7379,1,0
+debt_consolidation,Debt Refinancing,2014,Deep Subprime,124,2400475.0,19358.67,68,1354225.0,54.8387,56.4149,0.6812,1,0
+debt_consolidation,Debt Refinancing,2013,Deep Subprime,105,2366600.0,22539.05,38,832750.0,36.1905,35.1876,0.6716,1,0
+credit_card,Debt Refinancing,2012,Near Prime,226,2361525.0,10449.23,26,284150.0,11.5044,12.0325,0.6701,1,0
+credit_card,Debt Refinancing,2013,Elevated Risk,172,2347500.0,13648.26,46,759975.0,26.7442,32.3738,0.6661,1,0
+debt_consolidation,Debt Refinancing,2011,Near Prime,161,2052575.0,12748.91,17,219650.0,10.559,10.7012,0.5824,1,0
+credit_card,Debt Refinancing,2015,Elevated Risk,120,2034675.0,16955.63,52,862425.0,43.3333,42.3864,0.5774,1,0
+debt_consolidation,Debt Refinancing,2012,Subprime,84,1931250.0,22991.07,31,720900.0,36.9048,37.3282,0.548,1,0
+debt_consolidation,Debt Refinancing,2016,Subprime,93,1877975.0,20193.28,21,404875.0,22.5806,21.5591,0.5329,1,0
+debt_consolidation,Debt Refinancing,2016,Prime Low Risk,113,1616700.0,14307.08,4,71000.0,3.5398,4.3917,0.4588,1,0
+home_improvement,Home & Property,2014,Standard Consumer,117,1591625.0,13603.63,26,393450.0,22.2222,24.72,0.4516,0,0
+home_improvement,Home & Property,2015,Standard Consumer,108,1544250.0,14298.61,22,339175.0,20.3704,21.9637,0.4382,0,0
+credit_card,Debt Refinancing,2012,Standard Consumer,113,1399875.0,12388.27,18,241675.0,15.9292,17.264,0.3972,1,0
+home_improvement,Home & Property,2014,Near Prime,104,1390675.0,13371.88,11,220450.0,10.5769,15.852,0.3946,0,0
+credit_card,Debt Refinancing,2012,Prime Low Risk,118,1355100.0,11483.9,3,32550.0,2.5424,2.402,0.3845,1,0
+credit_card,Debt Refinancing,2016,Standard Consumer,87,1339800.0,15400.0,15,283150.0,17.2414,21.1338,0.3802,1,0
+debt_consolidation,Debt Refinancing,2011,Standard Consumer,101,1332725.0,13195.3,17,295450.0,16.8317,22.1689,0.3782,1,0
+home_improvement,Home & Property,2013,Near Prime,112,1326525.0,11843.97,16,193600.0,14.2857,14.5945,0.3764,0,0
+debt_consolidation,Debt Refinancing,2016,Deep Subprime,60,1285500.0,21425.0,19,386025.0,31.6667,30.0292,0.3648,1,0
+credit_card,Debt Refinancing,2016,Near Prime,99,1259225.0,12719.44,10,125200.0,10.101,9.9426,0.3573,1,0
+credit_card,Debt Refinancing,2015,Subprime,60,1224150.0,20402.5,22,429500.0,36.6667,35.0856,0.3474,1,0
+credit_card,Debt Refinancing,2014,Subprime,58,1212300.0,20901.72,22,481525.0,37.931,39.72,0.344,1,0
+debt_consolidation,Debt Refinancing,2011,Prime Low Risk,124,1133275.0,9139.31,6,48450.0,4.8387,4.2752,0.3216,1,0
+credit_card,Debt Refinancing,2013,Subprime,55,1095875.0,19925.0,17,301950.0,30.9091,27.5533,0.311,1,0
+home_improvement,Home & Property,2015,Near Prime,84,1071400.0,12754.76,11,193350.0,13.0952,18.0465,0.304,0,0
+home_improvement,Home & Property,2013,Standard Consumer,81,1069275.0,13200.93,15,205575.0,18.5185,19.2256,0.3034,0,0
+home_improvement,Home & Property,2015,Prime Low Risk,78,1040250.0,13336.54,3,36000.0,3.8462,3.4607,0.2952,0,0
+credit_card,Debt Refinancing,2012,Elevated Risk,67,1018325.0,15198.88,14,214050.0,20.8955,21.0198,0.289,1,0
+home_improvement,Home & Property,2014,Elevated Risk,61,961900.0,15768.85,16,212175.0,26.2295,22.0579,0.273,0,0
+debt_consolidation,Debt Refinancing,2011,Elevated Risk,68,958625.0,14097.43,15,249025.0,22.0588,25.9773,0.272,1,0
+debt_consolidation,Debt Refinancing,2011,Subprime,48,913175.0,19024.48,15,304500.0,31.25,33.3452,0.2591,1,0
+other,Miscellaneous,2014,Elevated Risk,70,899800.0,12854.29,16,233400.0,22.8571,25.9391,0.2553,0,0
+credit_card,Debt Refinancing,2016,Prime Low Risk,66,886800.0,13436.36,3,26000.0,4.5455,2.9319,0.2516,1,0
+home_improvement,Home & Property,2014,Prime Low Risk,57,875650.0,15362.28,5,73000.0,8.7719,8.3367,0.2485,0,0
+debt_consolidation,Debt Refinancing,2010,Near Prime,71,863100.0,12156.34,7,52700.0,9.8592,6.1059,0.2449,1,0
+debt_consolidation,Debt Refinancing,2012,Deep Subprime,35,852725.0,24363.57,13,291950.0,37.1429,34.2373,0.242,1,0
+other,Miscellaneous,2013,Elevated Risk,111,845925.0,7620.95,24,219225.0,21.6216,25.9154,0.24,0,0
+home_improvement,Home & Property,2015,Elevated Risk,47,784300.0,16687.23,14,230675.0,29.7872,29.4116,0.2226,0,0
+other,Miscellaneous,2015,Standard Consumer,89,783950.0,8808.43,28,213775.0,31.4607,27.269,0.2225,0,0
+home_improvement,Home & Property,2014,Subprime,47,782825.0,16655.85,12,248300.0,25.5319,31.7185,0.2221,0,0
+debt_consolidation,Debt Refinancing,2010,Standard Consumer,67,768425.0,11469.03,14,153275.0,20.8955,19.9466,0.218,1,0
+home_improvement,Home & Property,2013,Prime Low Risk,61,762700.0,12503.28,0,0.0,0.0,0.0,0.2164,0,0
+other,Miscellaneous,2014,Standard Consumer,74,726000.0,9810.81,13,136300.0,17.5676,18.7741,0.206,0,0
+debt_consolidation,Debt Refinancing,2015,High Default Risk,33,706225.0,21400.76,19,400100.0,57.5758,56.6533,0.2004,1,0
+other,Miscellaneous,2015,Elevated Risk,70,664525.0,9493.21,22,230525.0,31.4286,34.6902,0.1886,0,0
+home_improvement,Home & Property,2016,Near Prime,51,630500.0,12362.75,3,45000.0,5.8824,7.1372,0.1789,0,0
+home_improvement,Home & Property,2015,Subprime,31,615825.0,19865.32,13,280900.0,41.9355,45.6136,0.1747,0,0
+debt_consolidation,Debt Refinancing,2010,Prime Low Risk,54,598250.0,11078.7,2,22500.0,3.7037,3.761,0.1698,1,0
+debt_consolidation,Debt Refinancing,2014,High Default Risk,33,593175.0,17975.0,18,319875.0,54.5455,53.9259,0.1683,1,0
+other,Miscellaneous,2015,Near Prime,69,576675.0,8357.61,12,113900.0,17.3913,19.7512,0.1636,0,0
+credit_card,Debt Refinancing,2011,Near Prime,52,573625.0,11031.25,7,94250.0,13.4615,16.4306,0.1628,1,0
+home_improvement,Home & Property,2012,Near Prime,43,572525.0,13314.53,13,182900.0,30.2326,31.9462,0.1625,0,0
+other,Miscellaneous,2014,Subprime,55,564325.0,10260.45,18,186350.0,32.7273,33.0218,0.1601,0,0
+home_improvement,Home & Property,2016,Standard Consumer,39,556475.0,14268.59,1,24000.0,2.5641,4.3129,0.1579,0,0
+home_improvement,Home & Property,2013,Elevated Risk,46,547975.0,11912.5,8,118750.0,17.3913,21.6707,0.1555,0,0
+other,Miscellaneous,2012,Near Prime,54,517525.0,9583.8,8,76400.0,14.8148,14.7626,0.1469,0,0
+credit_card,Debt Refinancing,2016,Elevated Risk,35,488550.0,13958.57,7,109850.0,20.0,22.4849,0.1386,1,0
+home_improvement,Home & Property,2016,Elevated Risk,26,484000.0,18615.38,5,81800.0,19.2308,16.9008,0.1373,0,0
+major_purchase,Consumer Durable,2014,Standard Consumer,37,481425.0,13011.49,4,30575.0,10.8108,6.3509,0.1366,0,0
+other,Miscellaneous,2013,Subprime,56,470925.0,8409.38,17,131975.0,30.3571,28.0246,0.1336,0,0
+other,Miscellaneous,2014,Near Prime,47,451425.0,9604.79,5,33600.0,10.6383,7.4431,0.1281,0,0
+credit_card,Debt Refinancing,2013,Deep Subprime,18,439750.0,24430.56,8,197175.0,44.4444,44.838,0.1248,1,0
+credit_card,Debt Refinancing,2016,Subprime,21,432900.0,20614.29,8,171875.0,38.0952,39.7032,0.1228,1,0
+other,Miscellaneous,2015,Subprime,36,431525.0,11986.81,18,194150.0,50.0,44.9916,0.1225,0,0
+major_purchase,Consumer Durable,2015,Standard Consumer,34,423100.0,12444.12,8,107600.0,23.5294,25.4313,0.1201,0,0
+home_improvement,Home & Property,2016,Prime Low Risk,32,415000.0,12968.75,0,0.0,0.0,0.0,0.1178,0,0
+credit_card,Debt Refinancing,2015,Deep Subprime,20,414375.0,20718.75,9,173700.0,45.0,41.9186,0.1176,1,0
+home_improvement,Home & Property,2012,Prime Low Risk,38,414275.0,10901.97,1,7500.0,2.6316,1.8104,0.1176,0,0
+home_improvement,Home & Property,2013,Subprime,19,408750.0,21513.16,10,223300.0,52.6316,54.63,0.116,0,0
+credit_card,Debt Refinancing,2011,Standard Consumer,29,400325.0,13804.31,7,81475.0,24.1379,20.3522,0.1136,1,0
+credit_card,Debt Refinancing,2011,Prime Low Risk,38,383250.0,10085.53,2,9700.0,5.2632,2.531,0.1088,1,0
+major_purchase,Consumer Durable,2015,Elevated Risk,17,379100.0,22300.0,5,60000.0,29.4118,15.827,0.1076,0,0
+debt_consolidation,Debt Refinancing,2010,Elevated Risk,32,373400.0,11668.75,10,117800.0,31.25,31.5479,0.106,1,0
+debt_consolidation,Debt Refinancing,2009,Standard Consumer,34,367525.0,10809.56,5,55375.0,14.7059,15.067,0.1043,1,0
+debt_consolidation,Debt Refinancing,2013,High Default Risk,17,353275.0,20780.88,5,83950.0,29.4118,23.7634,0.1002,1,0
+major_purchase,Consumer Durable,2013,Near Prime,36,352350.0,9787.5,3,23600.0,8.3333,6.6979,0.1,0,0
+other,Miscellaneous,2013,Deep Subprime,24,347750.0,14489.58,10,118825.0,41.6667,34.1697,0.0987,0,0
+major_purchase,Consumer Durable,2014,Near Prime,30,344950.0,11498.33,5,68000.0,16.6667,19.713,0.0979,0,0
+debt_consolidation,Debt Refinancing,2011,Deep Subprime,17,342300.0,20135.29,3,53400.0,17.6471,15.6004,0.0971,1,0
+small_business,Commercial / Venture,2014,Elevated Risk,16,339250.0,21203.13,8,159025.0,50.0,46.8755,0.0963,0,1
+other,Miscellaneous,2013,Standard Consumer,34,337825.0,9936.03,2,30000.0,5.8824,8.8803,0.0959,0,0
+other,Miscellaneous,2016,Standard Consumer,36,329375.0,9149.31,4,36500.0,11.1111,11.0816,0.0935,0,0
+other,Miscellaneous,2015,Deep Subprime,19,319150.0,16797.37,8,137200.0,42.1053,42.9892,0.0906,0,0
+home_improvement,Home & Property,2013,Deep Subprime,16,302950.0,18934.38,5,90250.0,31.25,29.7904,0.086,0,0
+major_purchase,Consumer Durable,2014,Elevated Risk,18,282425.0,15690.28,9,170875.0,50.0,60.5028,0.0801,0,0
+major_purchase,Consumer Durable,2012,Prime Low Risk,29,280975.0,9688.79,2,40000.0,6.8966,14.2361,0.0797,0,0
+debt_consolidation,Debt Refinancing,2010,Subprime,22,278400.0,12654.55,10,141000.0,45.4545,50.6466,0.079,1,0
+credit_card,Debt Refinancing,2010,Near Prime,24,274200.0,11425.0,2,17000.0,8.3333,6.1999,0.0778,1,0
+debt_consolidation,Debt Refinancing,2009,Near Prime,21,273950.0,13045.24,4,69075.0,19.0476,25.2145,0.0777,1,0
+debt_consolidation,Debt Refinancing,2016,High Default Risk,16,271975.0,16998.44,7,149275.0,43.75,54.8856,0.0772,1,0
+other,Miscellaneous,2012,Standard Consumer,28,267500.0,9553.57,6,61725.0,21.4286,23.0748,0.0759,0,0
+home_improvement,Home & Property,2011,Prime Low Risk,27,267125.0,9893.52,0,0.0,0.0,0.0,0.0758,0,0
+medical,Emergency / Healthcare,2014,Standard Consumer,22,261325.0,11878.41,5,61000.0,22.7273,23.3426,0.0742,0,1
+major_purchase,Consumer Durable,2013,Standard Consumer,29,258700.0,8920.69,3,21825.0,10.3448,8.4364,0.0734,0,0
+home_improvement,Home & Property,2011,Near Prime,21,256400.0,12209.52,3,42800.0,14.2857,16.6927,0.0728,0,0
+small_business,Commercial / Venture,2012,Near Prime,18,254000.0,14111.11,2,44000.0,11.1111,17.3228,0.0721,0,1
+credit_card,Debt Refinancing,2012,Subprime,11,251000.0,22818.18,4,85475.0,36.3636,34.0538,0.0712,1,0
+home_improvement,Home & Property,2012,Standard Consumer,23,249625.0,10853.26,3,45775.0,13.0435,18.3375,0.0708,0,0
+small_business,Commercial / Venture,2013,Elevated Risk,21,248750.0,11845.24,4,42600.0,19.0476,17.1256,0.0706,0,1
+home_improvement,Home & Property,2015,Deep Subprime,10,238275.0,23827.5,5,127575.0,50.0,53.5411,0.0676,0,0
+house,Home & Property,2013,Standard Consumer,11,230475.0,20952.27,1,28625.0,9.0909,12.42,0.0654,0,0
+small_business,Commercial / Venture,2015,Subprime,13,226625.0,17432.69,4,57625.0,30.7692,25.4275,0.0643,0,1
+car,Auto / Vehicle,2015,Standard Consumer,18,220650.0,12258.33,5,42225.0,27.7778,19.1366,0.0626,0,0
+home_improvement,Home & Property,2014,Deep Subprime,10,219875.0,21987.5,4,112725.0,40.0,51.2678,0.0624,0,0
+major_purchase,Consumer Durable,2015,Prime Low Risk,16,218400.0,13650.0,0,0.0,0.0,0.0,0.062,0,0
+other,Miscellaneous,2016,Near Prime,30,215450.0,7181.67,2,9300.0,6.6667,4.3165,0.0611,0,0
+other,Miscellaneous,2016,Elevated Risk,19,214025.0,11264.47,3,22200.0,15.7895,10.3726,0.0607,0,0
+credit_card,Debt Refinancing,2011,Elevated Risk,17,208700.0,12276.47,2,13200.0,11.7647,6.3249,0.0592,1,0
+home_improvement,Home & Property,2012,Elevated Risk,12,205250.0,17104.17,2,27875.0,16.6667,13.581,0.0582,0,0
+credit_card,Debt Refinancing,2010,Standard Consumer,18,203950.0,11330.56,1,7000.0,5.5556,3.4322,0.0579,1,0
+major_purchase,Consumer Durable,2014,Subprime,14,202600.0,14471.43,4,108000.0,28.5714,53.307,0.0575,0,0
+small_business,Commercial / Venture,2015,Elevated Risk,14,201525.0,14394.64,3,56600.0,21.4286,28.0858,0.0572,0,1
+other,Miscellaneous,2012,Prime Low Risk,27,198900.0,7366.67,5,26500.0,18.5185,13.3233,0.0564,0,0
+other,Miscellaneous,2015,Prime Low Risk,20,193200.0,9660.0,0,0.0,0.0,0.0,0.0548,0,0
+other,Miscellaneous,2016,Subprime,10,192200.0,19220.0,4,36225.0,40.0,18.8476,0.0545,0,0
+small_business,Commercial / Venture,2016,Elevated Risk,10,189750.0,18975.0,3,58000.0,30.0,30.5665,0.0538,0,1
+other,Miscellaneous,2014,Deep Subprime,18,188925.0,10495.83,8,67475.0,44.4444,35.7152,0.0536,0,0
+medical,Emergency / Healthcare,2015,Standard Consumer,22,187825.0,8537.5,9,61625.0,40.9091,32.8098,0.0533,0,1
+major_purchase,Consumer Durable,2016,Standard Consumer,13,182525.0,14040.38,0,0.0,0.0,0.0,0.0518,0,0
+major_purchase,Consumer Durable,2015,Near Prime,17,182350.0,10726.47,4,41200.0,23.5294,22.5939,0.0517,0,0
+other,Miscellaneous,2013,Near Prime,20,181125.0,9056.25,1,10000.0,5.0,5.521,0.0514,0,0
+small_business,Commercial / Venture,2013,Subprime,14,180950.0,12925.0,4,39825.0,28.5714,22.0088,0.0513,0,1
+major_purchase,Consumer Durable,2013,Prime Low Risk,21,179350.0,8540.48,0,0.0,0.0,0.0,0.0509,0,0
+home_improvement,Home & Property,2012,Subprime,6,177550.0,29591.67,4,127800.0,66.6667,71.9797,0.0504,0,0
+small_business,Commercial / Venture,2011,Elevated Risk,11,177500.0,16136.36,3,53500.0,27.2727,30.1408,0.0504,0,1
+major_purchase,Consumer Durable,2015,Subprime,8,174425.0,21803.13,7,170850.0,87.5,97.9504,0.0495,0,0
+small_business,Commercial / Venture,2013,Deep Subprime,9,174300.0,19366.67,2,68950.0,22.2222,39.5582,0.0495,0,1
+debt_consolidation,Debt Refinancing,2010,Deep Subprime,14,174000.0,12428.57,6,85600.0,42.8571,49.1954,0.0494,1,0
+house,Home & Property,2013,Prime Low Risk,9,172975.0,19219.44,0,0.0,0.0,0.0,0.0491,0,0
+small_business,Commercial / Venture,2012,Subprime,6,166800.0,27800.0,3,89600.0,50.0,53.717,0.0473,0,1
+small_business,Commercial / Venture,2012,Prime Low Risk,13,164050.0,12619.23,3,53100.0,23.0769,32.3682,0.0466,0,1
+car,Auto / Vehicle,2014,Standard Consumer,15,162825.0,10855.0,6,78475.0,40.0,48.1959,0.0462,0,0
+major_purchase,Consumer Durable,2012,Near Prime,21,162700.0,7747.62,2,18250.0,9.5238,11.217,0.0462,0,0
+debt_consolidation,Debt Refinancing,2009,Prime Low Risk,17,162600.0,9564.71,0,0.0,0.0,0.0,0.0461,1,0
+small_business,Commercial / Venture,2011,Standard Consumer,9,162200.0,18022.22,2,35000.0,22.2222,21.5783,0.046,0,1
+other,Miscellaneous,2012,Elevated Risk,14,160975.0,11498.21,3,41450.0,21.4286,25.7493,0.0457,0,0
+credit_card,Debt Refinancing,2010,Elevated Risk,14,160050.0,11432.14,2,22200.0,14.2857,13.8707,0.0454,1,0
+small_business,Commercial / Venture,2014,Standard Consumer,11,159650.0,14513.64,0,0.0,0.0,0.0,0.0453,0,1
+credit_card,Debt Refinancing,2014,Deep Subprime,9,157200.0,17466.67,5,92150.0,55.5556,58.6196,0.0446,1,0
+small_business,Commercial / Venture,2011,Near Prime,12,157100.0,13091.67,2,9200.0,16.6667,5.8561,0.0446,0,1
+other,Miscellaneous,2016,Prime Low Risk,16,153500.0,9593.75,0,0.0,0.0,0.0,0.0436,0,0
+house,Home & Property,2013,Near Prime,9,150175.0,16686.11,1,35000.0,11.1111,23.3061,0.0426,0,0
+credit_card,Debt Refinancing,2012,Deep Subprime,6,150000.0,25000.0,0,0.0,0.0,0.0,0.0426,1,0
+car,Auto / Vehicle,2013,Near Prime,19,147225.0,7748.68,2,29200.0,10.5263,19.8336,0.0418,0,0
+credit_card,Debt Refinancing,2013,High Default Risk,6,146925.0,24487.5,1,20500.0,16.6667,13.9527,0.0417,1,0
+small_business,Commercial / Venture,2012,Standard Consumer,11,146150.0,13286.36,3,45325.0,27.2727,31.0127,0.0415,0,1
+car,Auto / Vehicle,2012,Prime Low Risk,20,145200.0,7260.0,2,11400.0,10.0,7.8512,0.0412,0,0
+wedding,Lifestyle / Event,2013,Elevated Risk,15,144200.0,9613.33,2,27500.0,13.3333,19.0707,0.0409,0,0
+credit_card,Debt Refinancing,2010,Prime Low Risk,17,143625.0,8448.53,0,0.0,0.0,0.0,0.0408,1,0
+house,Home & Property,2012,Near Prime,8,143250.0,17906.25,1,7000.0,12.5,4.8866,0.0406,0,0
+other,Miscellaneous,2011,Standard Consumer,19,142300.0,7489.47,6,48800.0,31.5789,34.2937,0.0404,0,0
+home_improvement,Home & Property,2011,Subprime,8,141150.0,17643.75,2,29750.0,25.0,21.0769,0.0401,0,0
+major_purchase,Consumer Durable,2016,Near Prime,13,140450.0,10803.85,1,11000.0,7.6923,7.832,0.0399,0,0
+car,Auto / Vehicle,2012,Near Prime,19,138925.0,7311.84,2,11900.0,10.5263,8.5658,0.0394,0,0
+other,Miscellaneous,2013,High Default Risk,9,138700.0,15411.11,3,56950.0,33.3333,41.0598,0.0394,0,0
+home_improvement,Home & Property,2010,Prime Low Risk,17,137600.0,8094.12,1,5000.0,5.8824,3.6337,0.039,0,0
+car,Auto / Vehicle,2011,Near Prime,20,137400.0,6870.0,3,21250.0,15.0,15.4658,0.039,0,0
+major_purchase,Consumer Durable,2014,Prime Low Risk,11,137250.0,12477.27,2,32500.0,18.1818,23.6794,0.0389,0,0
+credit_card,Debt Refinancing,2016,Deep Subprime,8,135450.0,16931.25,2,26800.0,25.0,19.7859,0.0384,1,0
+car,Auto / Vehicle,2014,Near Prime,13,135300.0,10407.69,2,33075.0,15.3846,24.4457,0.0384,0,0
+small_business,Commercial / Venture,2013,Standard Consumer,11,135000.0,12272.73,0,0.0,0.0,0.0,0.0383,0,1
+home_improvement,Home & Property,2016,Subprime,7,134025.0,19146.43,1,12900.0,14.2857,9.6251,0.038,0,0
+small_business,Commercial / Venture,2011,Subprime,5,133000.0,26600.0,1,25000.0,20.0,18.797,0.0377,0,1
+home_improvement,Home & Property,2010,Standard Consumer,10,131900.0,13190.0,1,20000.0,10.0,15.163,0.0374,0,0
+other,Miscellaneous,2011,Prime Low Risk,20,131600.0,6580.0,4,25700.0,20.0,19.5289,0.0373,0,0
+moving,Lifestyle / Relocation,2013,Subprime,16,131400.0,8212.5,7,55700.0,43.75,42.3896,0.0373,0,1
+other,Miscellaneous,2010,Standard Consumer,17,129500.0,7617.65,4,13200.0,23.5294,10.1931,0.0367,0,0
+home_improvement,Home & Property,2010,Near Prime,10,126900.0,12690.0,3,30000.0,30.0,23.6407,0.036,0,0
+other,Miscellaneous,2011,Subprime,8,126900.0,15862.5,2,15500.0,25.0,12.2143,0.036,0,0
+home_improvement,Home & Property,2015,High Default Risk,4,122825.0,30706.25,2,69625.0,50.0,56.6863,0.0349,0,0
+major_purchase,Consumer Durable,2011,Near Prime,12,122600.0,10216.67,1,6000.0,8.3333,4.894,0.0348,0,0
+debt_consolidation,Debt Refinancing,2011,High Default Risk,5,122100.0,24420.0,1,15000.0,20.0,12.285,0.0346,1,0
+other,Miscellaneous,2016,Deep Subprime,7,120800.0,17257.14,3,49725.0,42.8571,41.1631,0.0343,0,0
+moving,Lifestyle / Relocation,2015,Standard Consumer,14,120000.0,8571.43,4,34000.0,28.5714,28.3333,0.0341,0,1
+wedding,Lifestyle / Event,2012,Near Prime,11,118825.0,10802.27,3,10500.0,27.2727,8.8365,0.0337,0,0
+major_purchase,Consumer Durable,2015,Deep Subprime,5,118000.0,23600.0,3,58000.0,60.0,49.1525,0.0335,0,0
+car,Auto / Vehicle,2014,Subprime,6,116575.0,19429.17,2,39350.0,33.3333,33.7551,0.0331,0,0
+debt_consolidation,Debt Refinancing,2012,High Default Risk,4,116425.0,29106.25,2,53425.0,50.0,45.8879,0.033,1,0
+house,Home & Property,2015,Elevated Risk,6,116050.0,19341.67,4,81000.0,66.6667,69.7975,0.0329,0,0
+home_improvement,Home & Property,2011,Elevated Risk,7,115600.0,16514.29,2,32300.0,28.5714,27.9412,0.0328,0,0
+other,Miscellaneous,2010,Prime Low Risk,15,114500.0,7633.33,1,7000.0,6.6667,6.1135,0.0325,0,0
+other,Miscellaneous,2011,Near Prime,19,114425.0,6022.37,2,5500.0,10.5263,4.8066,0.0325,0,0
+small_business,Commercial / Venture,2010,Elevated Risk,6,113250.0,18875.0,1,25000.0,16.6667,22.0751,0.0321,0,1
+credit_card,Debt Refinancing,2011,Subprime,8,112675.0,14084.38,2,32650.0,25.0,28.9771,0.032,1,0
+other,Miscellaneous,2014,Prime Low Risk,11,112600.0,10236.36,1,4800.0,9.0909,4.2629,0.032,0,0
+small_business,Commercial / Venture,2012,Elevated Risk,7,112500.0,16071.43,3,53025.0,42.8571,47.1333,0.0319,0,1
+house,Home & Property,2012,Prime Low Risk,8,112225.0,14028.13,1,3500.0,12.5,3.1187,0.0318,0,0
+car,Auto / Vehicle,2015,Elevated Risk,10,112000.0,11200.0,3,25225.0,30.0,22.5223,0.0318,0,0
+medical,Emergency / Healthcare,2012,Prime Low Risk,13,111350.0,8565.38,2,11600.0,15.3846,10.4176,0.0316,0,1
+small_business,Commercial / Venture,2013,High Default Risk,5,111150.0,22230.0,3,81050.0,60.0,72.9195,0.0315,0,1
+car,Auto / Vehicle,2013,Standard Consumer,12,110675.0,9222.92,3,25925.0,25.0,23.4244,0.0314,0,0
+small_business,Commercial / Venture,2014,Subprime,8,109075.0,13634.38,6,95075.0,75.0,87.1648,0.031,0,1
+car,Auto / Vehicle,2013,Prime Low Risk,13,108400.0,8338.46,0,0.0,0.0,0.0,0.0308,0,0
+small_business,Commercial / Venture,2015,Deep Subprime,5,108375.0,21675.0,1,18000.0,20.0,16.609,0.0308,0,1
+debt_consolidation,Debt Refinancing,2008,Elevated Risk,8,108325.0,13540.63,0,0.0,0.0,0.0,0.0307,1,0
+major_purchase,Consumer Durable,2011,Prime Low Risk,21,107825.0,5134.52,1,8500.0,4.7619,7.8831,0.0306,0,0
+other,Miscellaneous,2010,Near Prime,14,107500.0,7678.57,3,28300.0,21.4286,26.3256,0.0305,0,0
+home_improvement,Home & Property,2011,Standard Consumer,9,107000.0,11888.89,2,15000.0,22.2222,14.0187,0.0304,0,0
+medical,Emergency / Healthcare,2013,Elevated Risk,17,106000.0,6235.29,3,25000.0,17.6471,23.5849,0.0301,0,1
+moving,Lifestyle / Relocation,2014,Elevated Risk,14,105250.0,7517.86,7,39250.0,50.0,37.2922,0.0299,0,1
+credit_card,Debt Refinancing,2009,Near Prime,10,104400.0,10440.0,1,4400.0,10.0,4.2146,0.0296,1,0
+medical,Emergency / Healthcare,2014,Subprime,11,103300.0,9390.91,5,55700.0,45.4545,53.9206,0.0293,0,1
+home_improvement,Home & Property,2010,Elevated Risk,10,99375.0,9937.5,0,0.0,0.0,0.0,0.0282,0,0
+vacation,Discretionary / Leisure,2013,Elevated Risk,16,98900.0,6181.25,5,41500.0,31.25,41.9616,0.0281,0,0
+major_purchase,Consumer Durable,2013,Elevated Risk,18,97700.0,5427.78,2,18625.0,11.1111,19.0635,0.0277,0,0
+medical,Emergency / Healthcare,2016,Standard Consumer,10,96600.0,9660.0,2,7000.0,20.0,7.2464,0.0274,0,1
+major_purchase,Consumer Durable,2010,Near Prime,10,96250.0,9625.0,1,6500.0,10.0,6.7532,0.0273,0,0
+home_improvement,Home & Property,2016,Deep Subprime,4,94675.0,23668.75,0,0.0,0.0,0.0,0.0269,0,0
+medical,Emergency / Healthcare,2014,Near Prime,10,94550.0,9455.0,2,8500.0,20.0,8.99,0.0268,0,1
+small_business,Commercial / Venture,2014,High Default Risk,4,93925.0,23481.25,0,0.0,0.0,0.0,0.0267,0,1
+moving,Lifestyle / Relocation,2015,Subprime,9,93700.0,10411.11,4,56550.0,44.4444,60.3522,0.0266,0,1
+moving,Lifestyle / Relocation,2015,Elevated Risk,13,93550.0,7196.15,5,28700.0,38.4615,30.6788,0.0265,0,1
+credit_card,Debt Refinancing,2008,Standard Consumer,10,93300.0,9330.0,2,25000.0,20.0,26.7953,0.0265,1,0
+debt_consolidation,Debt Refinancing,2009,Elevated Risk,8,93250.0,11656.25,3,37250.0,37.5,39.9464,0.0265,1,0
+major_purchase,Consumer Durable,2016,Subprime,6,90975.0,15162.5,0,0.0,0.0,0.0,0.0258,0,0
+car,Auto / Vehicle,2014,Elevated Risk,8,90725.0,11340.63,0,0.0,0.0,0.0,0.0257,0,0
+debt_consolidation,Debt Refinancing,2009,Subprime,6,90600.0,15100.0,1,20000.0,16.6667,22.0751,0.0257,1,0
+other,Miscellaneous,2015,High Default Risk,4,90575.0,22643.75,2,61525.0,50.0,67.9271,0.0257,0,0
+small_business,Commercial / Venture,2014,Deep Subprime,5,90500.0,18100.0,4,86500.0,80.0,95.5801,0.0257,0,1
+house,Home & Property,2014,Subprime,5,90275.0,18055.0,0,0.0,0.0,0.0,0.0256,0,0
+major_purchase,Consumer Durable,2010,Prime Low Risk,12,86500.0,7208.33,0,0.0,0.0,0.0,0.0245,0,0
+car,Auto / Vehicle,2015,Prime Low Risk,10,86200.0,8620.0,1,6600.0,10.0,7.6566,0.0245,0,0
+house,Home & Property,2015,Standard Consumer,6,85000.0,14166.67,0,0.0,0.0,0.0,0.0241,0,0
+medical,Emergency / Healthcare,2012,Near Prime,10,83875.0,8387.5,4,20500.0,40.0,24.4411,0.0238,0,1
+medical,Emergency / Healthcare,2014,Elevated Risk,14,83175.0,5941.07,4,24375.0,28.5714,29.3057,0.0236,0,1
+house,Home & Property,2015,Deep Subprime,6,82275.0,13712.5,2,38975.0,33.3333,47.3716,0.0233,0,0
+major_purchase,Consumer Durable,2014,Deep Subprime,4,82000.0,20500.0,3,47000.0,75.0,57.3171,0.0233,0,0
+car,Auto / Vehicle,2015,Near Prime,13,81900.0,6300.0,1,9000.0,7.6923,10.989,0.0232,0,0
+vacation,Discretionary / Leisure,2015,Standard Consumer,18,81700.0,4538.89,3,19000.0,16.6667,23.2558,0.0232,0,0
+wedding,Lifestyle / Event,2011,Near Prime,8,81600.0,10200.0,1,17800.0,12.5,21.8137,0.0232,0,0
+house,Home & Property,2014,Standard Consumer,5,81375.0,16275.0,1,11525.0,20.0,14.1628,0.0231,0,0
+medical,Emergency / Healthcare,2013,Standard Consumer,9,81275.0,9030.56,2,15100.0,22.2222,18.5789,0.0231,0,1
+small_business,Commercial / Venture,2010,Subprime,7,80800.0,11542.86,2,31000.0,28.5714,38.3663,0.0229,0,1
+major_purchase,Consumer Durable,2016,Prime Low Risk,7,80700.0,11528.57,1,8500.0,14.2857,10.5328,0.0229,0,0
+wedding,Lifestyle / Event,2013,Standard Consumer,5,80650.0,16130.0,1,28200.0,20.0,34.9659,0.0229,0,0
+house,Home & Property,2015,Subprime,5,79875.0,15975.0,1,10325.0,20.0,12.9264,0.0227,0,0
+house,Home & Property,2013,Elevated Risk,6,78950.0,13158.33,1,33950.0,16.6667,43.0019,0.0224,0,0
+home_improvement,Home & Property,2014,High Default Risk,3,78600.0,26200.0,1,34475.0,33.3333,43.8613,0.0223,0,0
+debt_consolidation,Debt Refinancing,2008,Near Prime,9,78425.0,8713.89,0,0.0,0.0,0.0,0.0223,1,0
+other,Miscellaneous,2011,Elevated Risk,13,78025.0,6001.92,5,30400.0,38.4615,38.9619,0.0221,0,0
+house,Home & Property,2016,Standard Consumer,7,77775.0,11110.71,0,0.0,0.0,0.0,0.0221,0,0
+car,Auto / Vehicle,2016,Standard Consumer,7,77475.0,11067.86,1,14000.0,14.2857,18.0703,0.022,0,0
+debt_consolidation,Debt Refinancing,2008,Standard Consumer,9,76300.0,8477.78,1,9600.0,11.1111,12.5819,0.0217,1,0
+wedding,Lifestyle / Event,2011,Prime Low Risk,9,75875.0,8430.56,0,0.0,0.0,0.0,0.0215,0,0
+major_purchase,Consumer Durable,2011,Standard Consumer,7,75500.0,10785.71,0,0.0,0.0,0.0,0.0214,0,0
+credit_card,Debt Refinancing,2010,Subprime,5,74500.0,14900.0,1,4800.0,20.0,6.443,0.0211,1,0
+small_business,Commercial / Venture,2015,Standard Consumer,6,74400.0,12400.0,2,40000.0,33.3333,53.7634,0.0211,0,1
+car,Auto / Vehicle,2010,Prime Low Risk,7,73900.0,10557.14,0,0.0,0.0,0.0,0.021,0,0
+small_business,Commercial / Venture,2010,Standard Consumer,5,71000.0,14200.0,1,10000.0,20.0,14.0845,0.0201,0,1
+wedding,Lifestyle / Event,2012,Prime Low Risk,7,70800.0,10114.29,0,0.0,0.0,0.0,0.0201,0,0
+moving,Lifestyle / Relocation,2014,Standard Consumer,12,68800.0,5733.33,3,20800.0,25.0,30.2326,0.0195,0,1
+house,Home & Property,2012,Standard Consumer,4,67425.0,16856.25,1,16000.0,25.0,23.7301,0.0191,0,0
+moving,Lifestyle / Relocation,2011,Near Prime,6,66875.0,11145.83,0,0.0,0.0,0.0,0.019,0,1
+small_business,Commercial / Venture,2011,Prime Low Risk,9,66700.0,7411.11,1,5000.0,11.1111,7.4963,0.0189,0,1
+small_business,Commercial / Venture,2016,Standard Consumer,6,66625.0,11104.17,2,47000.0,33.3333,70.5441,0.0189,0,1
+small_business,Commercial / Venture,2010,Near Prime,3,66000.0,22000.0,0,0.0,0.0,0.0,0.0187,0,1
+small_business,Commercial / Venture,2016,Prime Low Risk,3,64000.0,21333.33,0,0.0,0.0,0.0,0.0182,0,1
+vacation,Discretionary / Leisure,2014,Subprime,8,63600.0,7950.0,3,37600.0,37.5,59.1195,0.018,0,0
+major_purchase,Consumer Durable,2010,Standard Consumer,9,62850.0,6983.33,2,17250.0,22.2222,27.4463,0.0178,0,0
+other,Miscellaneous,2014,High Default Risk,4,62700.0,15675.0,3,34700.0,75.0,55.3429,0.0178,0,0
+house,Home & Property,2014,Elevated Risk,4,62675.0,15668.75,1,8075.0,25.0,12.8839,0.0178,0,0
+moving,Lifestyle / Relocation,2014,Subprime,9,62200.0,6911.11,5,30700.0,55.5556,49.3569,0.0176,0,1
+major_purchase,Consumer Durable,2013,Subprime,6,62175.0,10362.5,3,42600.0,50.0,68.5163,0.0176,0,0
+car,Auto / Vehicle,2011,Standard Consumer,8,61750.0,7718.75,0,0.0,0.0,0.0,0.0175,0,0
+car,Auto / Vehicle,2011,Prime Low Risk,14,61425.0,4387.5,0,0.0,0.0,0.0,0.0174,0,0
+medical,Emergency / Healthcare,2015,Elevated Risk,10,61325.0,6132.5,4,25925.0,40.0,42.2748,0.0174,0,1
+house,Home & Property,2015,High Default Risk,3,60100.0,20033.33,2,30000.0,66.6667,49.9168,0.0171,0,0
+small_business,Commercial / Venture,2011,Deep Subprime,4,59975.0,14993.75,1,21000.0,25.0,35.0146,0.017,0,1
+other,Miscellaneous,2009,Near Prime,11,59300.0,5390.91,1,1500.0,9.0909,2.5295,0.0168,0,0
+small_business,Commercial / Venture,2010,Prime Low Risk,6,59250.0,9875.0,1,6250.0,16.6667,10.5485,0.0168,0,1
+small_business,Commercial / Venture,2014,Near Prime,5,59000.0,11800.0,0,0.0,0.0,0.0,0.0167,0,1
+car,Auto / Vehicle,2016,Near Prime,6,57800.0,9633.33,0,0.0,0.0,0.0,0.0164,0,0
+other,Miscellaneous,2009,Prime Low Risk,11,57750.0,5250.0,0,0.0,0.0,0.0,0.0164,0,0
+car,Auto / Vehicle,2015,Subprime,4,57025.0,14256.25,1,23100.0,25.0,40.5085,0.0162,0,0
+home_improvement,Home & Property,2008,Near Prime,4,55800.0,13950.0,0,0.0,0.0,0.0,0.0158,0,0
+credit_card,Debt Refinancing,2009,Prime Low Risk,7,55500.0,7928.57,0,0.0,0.0,0.0,0.0157,1,0
+major_purchase,Consumer Durable,2012,Standard Consumer,8,54800.0,6850.0,1,10000.0,12.5,18.2482,0.0156,0,0
+vacation,Discretionary / Leisure,2014,Deep Subprime,6,54550.0,9091.67,3,28150.0,50.0,51.604,0.0155,0,0
+moving,Lifestyle / Relocation,2012,Near Prime,9,54500.0,6055.56,2,8000.0,22.2222,14.6789,0.0155,0,1
+vacation,Discretionary / Leisure,2015,Near Prime,9,54000.0,6000.0,0,0.0,0.0,0.0,0.0153,0,0
+home_improvement,Home & Property,2016,High Default Risk,2,53750.0,26875.0,1,35000.0,50.0,65.1163,0.0153,0,0
+medical,Emergency / Healthcare,2011,Near Prime,9,53125.0,5902.78,3,16500.0,33.3333,31.0588,0.0151,0,1
+house,Home & Property,2011,Elevated Risk,3,53000.0,17666.67,0,0.0,0.0,0.0,0.015,0,0
+wedding,Lifestyle / Event,2012,Elevated Risk,5,53000.0,10600.0,0,0.0,0.0,0.0,0.015,0,0
+other,Miscellaneous,2012,Deep Subprime,3,52425.0,17475.0,0,0.0,0.0,0.0,0.0149,0,0
+medical,Emergency / Healthcare,2011,Elevated Risk,5,51900.0,10380.0,2,14400.0,40.0,27.7457,0.0147,0,1
+medical,Emergency / Healthcare,2012,Elevated Risk,4,51600.0,12900.0,1,18000.0,25.0,34.8837,0.0146,0,1
+major_purchase,Consumer Durable,2011,Deep Subprime,2,51000.0,25500.0,1,16000.0,50.0,31.3725,0.0145,0,0
+home_improvement,Home & Property,2012,Deep Subprime,2,50600.0,25300.0,0,0.0,0.0,0.0,0.0144,0,0
+credit_card,Debt Refinancing,2009,Standard Consumer,5,50100.0,10020.0,1,19200.0,20.0,38.3234,0.0142,1,0
+debt_consolidation,Debt Refinancing,2010,High Default Risk,2,50000.0,25000.0,1,25000.0,50.0,50.0,0.0142,1,0
+medical,Emergency / Healthcare,2016,Elevated Risk,3,50000.0,16666.67,2,26000.0,66.6667,52.0,0.0142,0,1
+medical,Emergency / Healthcare,2015,High Default Risk,2,49025.0,24512.5,2,49025.0,100.0,100.0,0.0139,0,1
+moving,Lifestyle / Relocation,2015,Near Prime,6,48325.0,8054.17,2,20825.0,33.3333,43.0936,0.0137,0,1
+small_business,Commercial / Venture,2016,Near Prime,5,48000.0,9600.0,2,10000.0,40.0,20.8333,0.0136,0,1
+credit_card,Debt Refinancing,2014,High Default Risk,3,47675.0,15891.67,1,5950.0,33.3333,12.4803,0.0135,1,0
+credit_card,Debt Refinancing,2009,Elevated Risk,3,47650.0,15883.33,0,0.0,0.0,0.0,0.0135,1,0
+medical,Emergency / Healthcare,2015,Near Prime,8,47275.0,5909.38,1,5000.0,12.5,10.5764,0.0134,0,1
+major_purchase,Consumer Durable,2012,Subprime,3,47100.0,15700.0,2,45000.0,66.6667,95.5414,0.0134,0,0
+vacation,Discretionary / Leisure,2014,Elevated Risk,6,46600.0,7766.67,2,24300.0,33.3333,52.1459,0.0132,0,0
+moving,Lifestyle / Relocation,2014,Deep Subprime,7,46325.0,6617.86,2,11375.0,28.5714,24.5548,0.0131,0,1
+wedding,Lifestyle / Event,2013,Subprime,6,45825.0,7637.5,1,3200.0,16.6667,6.9831,0.013,0,0
+home_improvement,Home & Property,2011,Deep Subprime,2,45600.0,22800.0,0,0.0,0.0,0.0,0.0129,0,0
+medical,Emergency / Healthcare,2013,Subprime,10,45225.0,4522.5,2,4450.0,20.0,9.8397,0.0128,0,1
+house,Home & Property,2011,Prime Low Risk,2,45000.0,22500.0,0,0.0,0.0,0.0,0.0128,0,0
+house,Home & Property,2012,Subprime,2,44775.0,22387.5,1,27175.0,50.0,60.6924,0.0127,0,0
+medical,Emergency / Healthcare,2014,High Default Risk,2,44550.0,22275.0,2,44550.0,100.0,100.0,0.0126,0,1
+educational,Education,2010,Standard Consumer,3,44200.0,14733.33,0,0.0,0.0,0.0,0.0125,0,0
+other,Miscellaneous,2016,High Default Risk,2,43950.0,21975.0,1,25525.0,50.0,58.0774,0.0125,0,0
+major_purchase,Consumer Durable,2015,High Default Risk,2,43500.0,21750.0,1,32400.0,50.0,74.4828,0.0123,0,0
+car,Auto / Vehicle,2011,Elevated Risk,4,43000.0,10750.0,0,0.0,0.0,0.0,0.0122,0,0
+other,Miscellaneous,2011,Deep Subprime,3,43000.0,14333.33,1,8000.0,33.3333,18.6047,0.0122,0,0
+moving,Lifestyle / Relocation,2012,Standard Consumer,7,42975.0,6139.29,1,6000.0,14.2857,13.9616,0.0122,0,1
+home_improvement,Home & Property,2009,Standard Consumer,3,42750.0,14250.0,1,10000.0,33.3333,23.3918,0.0121,0,0
+house,Home & Property,2012,Elevated Risk,3,42650.0,14216.67,0,0.0,0.0,0.0,0.0121,0,0
+other,Miscellaneous,2008,Prime Low Risk,6,42600.0,7100.0,1,18000.0,16.6667,42.2535,0.0121,0,0
+house,Home & Property,2013,Subprime,2,42500.0,21250.0,0,0.0,0.0,0.0,0.0121,0,0
+major_purchase,Consumer Durable,2014,High Default Risk,2,42400.0,21200.0,0,0.0,0.0,0.0,0.012,0,0
+moving,Lifestyle / Relocation,2016,Standard Consumer,6,42100.0,7016.67,1,5000.0,16.6667,11.8765,0.0119,0,1
+major_purchase,Consumer Durable,2011,Subprime,3,42000.0,14000.0,1,12000.0,33.3333,28.5714,0.0119,0,0
+vacation,Discretionary / Leisure,2015,Deep Subprime,2,41725.0,20862.5,1,15300.0,50.0,36.6687,0.0118,0,0
+small_business,Commercial / Venture,2013,Near Prime,3,40800.0,13600.0,0,0.0,0.0,0.0,0.0116,0,1
+car,Auto / Vehicle,2013,Elevated Risk,7,40600.0,5800.0,1,9000.0,14.2857,22.1675,0.0115,0,0
+home_improvement,Home & Property,2013,High Default Risk,2,40550.0,20275.0,0,0.0,0.0,0.0,0.0115,0,0
+vacation,Discretionary / Leisure,2015,Elevated Risk,6,40400.0,6733.33,0,0.0,0.0,0.0,0.0115,0,0
+wedding,Lifestyle / Event,2012,Standard Consumer,4,40275.0,10068.75,1,10375.0,25.0,25.7604,0.0114,0,0
+house,Home & Property,2011,Deep Subprime,2,40100.0,20050.0,1,5100.0,50.0,12.7182,0.0114,0,0
+credit_card,Debt Refinancing,2011,Deep Subprime,2,40000.0,20000.0,0,0.0,0.0,0.0,0.0114,1,0
+house,Home & Property,2011,Near Prime,2,40000.0,20000.0,0,0.0,0.0,0.0,0.0114,0,0
+house,Home & Property,2013,Deep Subprime,2,39200.0,19600.0,0,0.0,0.0,0.0,0.0111,0,0
+credit_card,Debt Refinancing,2008,Elevated Risk,5,39000.0,7800.0,1,7500.0,20.0,19.2308,0.0111,1,0
+car,Auto / Vehicle,2014,Prime Low Risk,6,38675.0,6445.83,0,0.0,0.0,0.0,0.011,0,0
+major_purchase,Consumer Durable,2016,Deep Subprime,1,38225.0,38225.0,0,0.0,0.0,0.0,0.0108,0,0
+moving,Lifestyle / Relocation,2015,Deep Subprime,2,38000.0,19000.0,0,0.0,0.0,0.0,0.0108,0,1
+other,Miscellaneous,2009,Standard Consumer,6,37400.0,6233.33,0,0.0,0.0,0.0,0.0106,0,0
+house,Home & Property,2016,Elevated Risk,2,37150.0,18575.0,1,17950.0,50.0,48.3176,0.0105,0,0
+major_purchase,Consumer Durable,2016,Elevated Risk,4,37075.0,9268.75,2,20075.0,50.0,54.147,0.0105,0,0
+moving,Lifestyle / Relocation,2010,Standard Consumer,3,37000.0,12333.33,0,0.0,0.0,0.0,0.0105,0,1
+medical,Emergency / Healthcare,2011,Prime Low Risk,8,36975.0,4621.88,1,4000.0,12.5,10.8181,0.0105,0,1
+moving,Lifestyle / Relocation,2013,Elevated Risk,8,36800.0,4600.0,1,5000.0,12.5,13.587,0.0104,0,1
+medical,Emergency / Healthcare,2012,Standard Consumer,5,36600.0,7320.0,1,8800.0,20.0,24.0437,0.0104,0,1
+home_improvement,Home & Property,2009,Prime Low Risk,4,35500.0,8875.0,0,0.0,0.0,0.0,0.0101,0,0
+house,Home & Property,2014,High Default Risk,2,35400.0,17700.0,1,19800.0,50.0,55.9322,0.01,0,0
+house,Home & Property,2010,Standard Consumer,2,35000.0,17500.0,0,0.0,0.0,0.0,0.0099,0,0
+medical,Emergency / Healthcare,2016,Prime Low Risk,6,34500.0,5750.0,0,0.0,0.0,0.0,0.0098,0,1
+wedding,Lifestyle / Event,2011,Elevated Risk,4,34300.0,8575.0,2,12700.0,50.0,37.0262,0.0097,0,0
+car,Auto / Vehicle,2016,Prime Low Risk,4,34000.0,8500.0,0,0.0,0.0,0.0,0.0096,0,0
+medical,Emergency / Healthcare,2013,High Default Risk,2,34000.0,17000.0,1,18000.0,50.0,52.9412,0.0096,0,1
+moving,Lifestyle / Relocation,2012,Elevated Risk,2,34000.0,17000.0,0,0.0,0.0,0.0,0.0096,0,1
+medical,Emergency / Healthcare,2010,Standard Consumer,3,33500.0,11166.67,0,0.0,0.0,0.0,0.0095,0,1
+vacation,Discretionary / Leisure,2014,Standard Consumer,11,33500.0,3045.45,1,4000.0,9.0909,11.9403,0.0095,0,0
+vacation,Discretionary / Leisure,2014,Near Prime,6,33350.0,5558.33,1,4800.0,16.6667,14.3928,0.0095,0,0
+major_purchase,Consumer Durable,2010,Elevated Risk,6,33100.0,5516.67,4,24700.0,66.6667,74.6224,0.0094,0,0
+medical,Emergency / Healthcare,2015,Deep Subprime,2,33000.0,16500.0,1,18000.0,50.0,54.5455,0.0094,0,1
+wedding,Lifestyle / Event,2010,Elevated Risk,4,33000.0,8250.0,0,0.0,0.0,0.0,0.0094,0,0
+small_business,Commercial / Venture,2016,Deep Subprime,2,32725.0,16362.5,0,0.0,0.0,0.0,0.0093,0,1
+major_purchase,Consumer Durable,2012,Elevated Risk,2,32000.0,16000.0,0,0.0,0.0,0.0,0.0091,0,0
+medical,Emergency / Healthcare,2010,Prime Low Risk,3,32000.0,10666.67,0,0.0,0.0,0.0,0.0091,0,1
+small_business,Commercial / Venture,2012,High Default Risk,1,31825.0,31825.0,1,31825.0,100.0,100.0,0.009,0,1
+credit_card,Debt Refinancing,2015,High Default Risk,1,31700.0,31700.0,0,0.0,0.0,0.0,0.009,1,0
+car,Auto / Vehicle,2012,Subprime,2,31425.0,15712.5,0,0.0,0.0,0.0,0.0089,0,0
+car,Auto / Vehicle,2016,Deep Subprime,2,31375.0,15687.5,1,20000.0,50.0,63.745,0.0089,0,0
+wedding,Lifestyle / Event,2012,Subprime,2,31200.0,15600.0,0,0.0,0.0,0.0,0.0089,0,0
+small_business,Commercial / Venture,2015,Near Prime,3,31050.0,10350.0,0,0.0,0.0,0.0,0.0088,0,1
+house,Home & Property,2015,Near Prime,2,31000.0,15500.0,0,0.0,0.0,0.0,0.0088,0,0
+vacation,Discretionary / Leisure,2015,Subprime,3,30900.0,10300.0,2,27575.0,66.6667,89.2395,0.0088,0,0
+moving,Lifestyle / Relocation,2013,Standard Consumer,4,30625.0,7656.25,0,0.0,0.0,0.0,0.0087,0,1
+major_purchase,Consumer Durable,2010,Subprime,3,30400.0,10133.33,1,21000.0,33.3333,69.0789,0.0086,0,0
+car,Auto / Vehicle,2012,Elevated Risk,2,30300.0,15150.0,0,0.0,0.0,0.0,0.0086,0,0
+house,Home & Property,2016,Subprime,1,30000.0,30000.0,0,0.0,0.0,0.0,0.0085,0,0
+small_business,Commercial / Venture,2009,Subprime,2,30000.0,15000.0,2,30000.0,100.0,100.0,0.0085,0,1
+wedding,Lifestyle / Event,2010,Prime Low Risk,4,30000.0,7500.0,0,0.0,0.0,0.0,0.0085,0,0
+vacation,Discretionary / Leisure,2013,Standard Consumer,7,29500.0,4214.29,1,8000.0,14.2857,27.1186,0.0084,0,0
+house,Home & Property,2014,Deep Subprime,2,29375.0,14687.5,1,14375.0,50.0,48.9362,0.0083,0,0
+medical,Emergency / Healthcare,2010,Near Prime,4,29100.0,7275.0,2,7500.0,50.0,25.7732,0.0083,0,1
+vacation,Discretionary / Leisure,2016,Elevated Risk,4,29100.0,7275.0,1,18800.0,25.0,64.6048,0.0083,0,0
+car,Auto / Vehicle,2016,Elevated Risk,2,29000.0,14500.0,0,0.0,0.0,0.0,0.0082,0,0
+medical,Emergency / Healthcare,2016,Near Prime,3,29000.0,9666.67,0,0.0,0.0,0.0,0.0082,0,1
+vacation,Discretionary / Leisure,2012,Elevated Risk,4,29000.0,7250.0,1,6500.0,25.0,22.4138,0.0082,0,0
+moving,Lifestyle / Relocation,2014,Near Prime,7,28600.0,4085.71,1,3000.0,14.2857,10.4895,0.0081,0,1
+major_purchase,Consumer Durable,2009,Near Prime,3,28500.0,9500.0,0,0.0,0.0,0.0,0.0081,0,0
+other,Miscellaneous,2008,Subprime,2,28500.0,14250.0,0,0.0,0.0,0.0,0.0081,0,0
+small_business,Commercial / Venture,2009,Standard Consumer,3,28500.0,9500.0,1,8000.0,33.3333,28.0702,0.0081,0,1
+vacation,Discretionary / Leisure,2012,Near Prime,3,28300.0,9433.33,0,0.0,0.0,0.0,0.008,0,0
+car,Auto / Vehicle,2009,Prime Low Risk,4,28200.0,7050.0,0,0.0,0.0,0.0,0.008,0,0
+house,Home & Property,2011,Subprime,1,28000.0,28000.0,0,0.0,0.0,0.0,0.0079,0,0
+other,Miscellaneous,2013,Prime Low Risk,2,28000.0,14000.0,0,0.0,0.0,0.0,0.0079,0,0
+car,Auto / Vehicle,2012,Standard Consumer,6,27650.0,4608.33,0,0.0,0.0,0.0,0.0078,0,0
+moving,Lifestyle / Relocation,2011,Prime Low Risk,6,27400.0,4566.67,2,5000.0,33.3333,18.2482,0.0078,0,1
+credit_card,Debt Refinancing,2008,Near Prime,4,27200.0,6800.0,0,0.0,0.0,0.0,0.0077,1,0
+house,Home & Property,2010,Near Prime,3,27000.0,9000.0,0,0.0,0.0,0.0,0.0077,0,0
+major_purchase,Consumer Durable,2011,Elevated Risk,6,26900.0,4483.33,0,0.0,0.0,0.0,0.0076,0,0
+other,Miscellaneous,2010,Elevated Risk,6,26900.0,4483.33,1,2100.0,16.6667,7.8067,0.0076,0,0
+wedding,Lifestyle / Event,2011,Standard Consumer,3,26200.0,8733.33,0,0.0,0.0,0.0,0.0074,0,0
+wedding,Lifestyle / Event,2011,High Default Risk,3,25600.0,8533.33,1,7000.0,33.3333,27.3438,0.0073,0,0
+vacation,Discretionary / Leisure,2012,Prime Low Risk,6,25400.0,4233.33,2,7000.0,33.3333,27.5591,0.0072,0,0
+other,Miscellaneous,2010,Subprime,5,25300.0,5060.0,2,13700.0,40.0,54.1502,0.0072,0,0
+medical,Emergency / Healthcare,2015,Subprime,3,25200.0,8400.0,0,0.0,0.0,0.0,0.0072,0,1
+home_improvement,Home & Property,2009,Near Prime,2,25000.0,12500.0,0,0.0,0.0,0.0,0.0071,0,0
+major_purchase,Consumer Durable,2012,Deep Subprime,1,25000.0,25000.0,1,25000.0,100.0,100.0,0.0071,0,0
+medical,Emergency / Healthcare,2014,Prime Low Risk,1,25000.0,25000.0,0,0.0,0.0,0.0,0.0071,0,1
+moving,Lifestyle / Relocation,2010,Prime Low Risk,3,25000.0,8333.33,0,0.0,0.0,0.0,0.0071,0,1
+moving,Lifestyle / Relocation,2013,Deep Subprime,1,25000.0,25000.0,1,25000.0,100.0,100.0,0.0071,0,1
+moving,Lifestyle / Relocation,2015,Prime Low Risk,1,25000.0,25000.0,0,0.0,0.0,0.0,0.0071,0,1
+other,Miscellaneous,2008,High Default Risk,1,25000.0,25000.0,0,0.0,0.0,0.0,0.0071,0,0
+small_business,Commercial / Venture,2008,Elevated Risk,1,25000.0,25000.0,1,25000.0,100.0,100.0,0.0071,0,1
+wedding,Lifestyle / Event,2008,Subprime,1,25000.0,25000.0,1,25000.0,100.0,100.0,0.0071,0,0
+wedding,Lifestyle / Event,2010,Near Prime,3,25000.0,8333.33,0,0.0,0.0,0.0,0.0071,0,0
+major_purchase,Consumer Durable,2013,Deep Subprime,1,24925.0,24925.0,1,24925.0,100.0,100.0,0.0071,0,0
+car,Auto / Vehicle,2010,Near Prime,4,24700.0,6175.0,0,0.0,0.0,0.0,0.007,0,0
+other,Miscellaneous,2008,Near Prime,4,24600.0,6150.0,1,4000.0,25.0,16.2602,0.007,0,0
+vacation,Discretionary / Leisure,2011,Prime Low Risk,4,24200.0,6050.0,0,0.0,0.0,0.0,0.0069,0,0
+credit_card,Debt Refinancing,2008,Prime Low Risk,3,24000.0,8000.0,0,0.0,0.0,0.0,0.0068,1,0
+medical,Emergency / Healthcare,2015,Prime Low Risk,3,24000.0,8000.0,0,0.0,0.0,0.0,0.0068,0,1
+moving,Lifestyle / Relocation,2016,Near Prime,2,24000.0,12000.0,0,0.0,0.0,0.0,0.0068,0,1
+vacation,Discretionary / Leisure,2016,Standard Consumer,3,23200.0,7733.33,0,0.0,0.0,0.0,0.0066,0,0
+moving,Lifestyle / Relocation,2012,Prime Low Risk,3,23125.0,7708.33,0,0.0,0.0,0.0,0.0066,0,1
+credit_card,Debt Refinancing,2010,Deep Subprime,1,22000.0,22000.0,1,22000.0,100.0,100.0,0.0062,1,0
+vacation,Discretionary / Leisure,2013,Near Prime,1,21725.0,21725.0,1,21725.0,100.0,100.0,0.0062,0,0
+car,Auto / Vehicle,2015,Deep Subprime,1,21275.0,21275.0,1,21275.0,100.0,100.0,0.006,0,0
+small_business,Commercial / Venture,2009,Deep Subprime,2,21175.0,10587.5,0,0.0,0.0,0.0,0.006,0,1
+renewable_energy,Green Energy,2015,Standard Consumer,2,21000.0,10500.0,1,11000.0,50.0,52.381,0.006,0,0
+other,Miscellaneous,2012,High Default Risk,1,20950.0,20950.0,1,20950.0,100.0,100.0,0.0059,0,0
+wedding,Lifestyle / Event,2009,Near Prime,3,20500.0,6833.33,0,0.0,0.0,0.0,0.0058,0,0
+house,Home & Property,2009,Standard Consumer,1,20000.0,20000.0,0,0.0,0.0,0.0,0.0057,0,0
+small_business,Commercial / Venture,2007,Near Prime,1,20000.0,20000.0,1,20000.0,100.0,100.0,0.0057,0,1
+wedding,Lifestyle / Event,2013,High Default Risk,1,20000.0,20000.0,1,20000.0,100.0,100.0,0.0057,0,0
+car,Auto / Vehicle,2010,Elevated Risk,3,19900.0,6633.33,0,0.0,0.0,0.0,0.0056,0,0
+small_business,Commercial / Venture,2015,High Default Risk,1,19075.0,19075.0,1,19075.0,100.0,100.0,0.0054,0,1
+small_business,Commercial / Venture,2016,High Default Risk,2,18475.0,9237.5,1,15000.0,50.0,81.1908,0.0052,0,1
+credit_card,Debt Refinancing,2012,High Default Risk,1,18225.0,18225.0,0,0.0,0.0,0.0,0.0052,1,0
+car,Auto / Vehicle,2016,Subprime,1,18000.0,18000.0,0,0.0,0.0,0.0,0.0051,0,0
+other,Miscellaneous,2010,Deep Subprime,2,17700.0,8850.0,0,0.0,0.0,0.0,0.005,0,0
+moving,Lifestyle / Relocation,2010,Near Prime,3,17400.0,5800.0,0,0.0,0.0,0.0,0.0049,0,1
+moving,Lifestyle / Relocation,2015,High Default Risk,1,17300.0,17300.0,0,0.0,0.0,0.0,0.0049,0,1
+medical,Emergency / Healthcare,2014,Deep Subprime,3,17125.0,5708.33,0,0.0,0.0,0.0,0.0049,0,1
+car,Auto / Vehicle,2010,Standard Consumer,3,16650.0,5550.0,0,0.0,0.0,0.0,0.0047,0,0
+renewable_energy,Green Energy,2013,Subprime,1,16500.0,16500.0,0,0.0,0.0,0.0,0.0047,0,0
+renewable_energy,Green Energy,2012,Near Prime,2,16400.0,8200.0,1,10000.0,50.0,60.9756,0.0047,0,0
+medical,Emergency / Healthcare,2013,Deep Subprime,1,16000.0,16000.0,1,16000.0,100.0,100.0,0.0045,0,1
+renewable_energy,Green Energy,2010,Prime Low Risk,1,16000.0,16000.0,0,0.0,0.0,0.0,0.0045,0,0
+small_business,Commercial / Venture,2009,Elevated Risk,1,16000.0,16000.0,0,0.0,0.0,0.0,0.0045,0,1
+wedding,Lifestyle / Event,2013,Deep Subprime,1,16000.0,16000.0,0,0.0,0.0,0.0,0.0045,0,0
+home_improvement,Home & Property,2009,Subprime,2,15500.0,7750.0,0,0.0,0.0,0.0,0.0044,0,0
+wedding,Lifestyle / Event,2009,Elevated Risk,2,15200.0,7600.0,0,0.0,0.0,0.0,0.0043,0,0
+home_improvement,Home & Property,2010,Deep Subprime,1,15000.0,15000.0,1,15000.0,100.0,100.0,0.0043,0,0
+house,Home & Property,2015,Prime Low Risk,1,15000.0,15000.0,0,0.0,0.0,0.0,0.0043,0,0
+small_business,Commercial / Venture,2013,Prime Low Risk,1,15000.0,15000.0,0,0.0,0.0,0.0,0.0043,0,1
+wedding,Lifestyle / Event,2010,Subprime,1,15000.0,15000.0,0,0.0,0.0,0.0,0.0043,0,0
+vacation,Discretionary / Leisure,2016,Near Prime,2,14500.0,7250.0,0,0.0,0.0,0.0,0.0041,0,0
+car,Auto / Vehicle,2009,Near Prime,1,14400.0,14400.0,0,0.0,0.0,0.0,0.0041,0,0
+moving,Lifestyle / Relocation,2016,Deep Subprime,2,14400.0,7200.0,1,2400.0,50.0,16.6667,0.0041,0,1
+vacation,Discretionary / Leisure,2013,Subprime,2,14400.0,7200.0,0,0.0,0.0,0.0,0.0041,0,0
+debt_consolidation,Debt Refinancing,2008,Prime Low Risk,4,14300.0,3575.0,0,0.0,0.0,0.0,0.0041,1,0
+vacation,Discretionary / Leisure,2011,Near Prime,4,14300.0,3575.0,1,1200.0,25.0,8.3916,0.0041,0,0
+car,Auto / Vehicle,2010,Subprime,3,14250.0,4750.0,0,0.0,0.0,0.0,0.004,0,0
+house,Home & Property,2009,Near Prime,1,14000.0,14000.0,0,0.0,0.0,0.0,0.004,0,0
+moving,Lifestyle / Relocation,2010,Subprime,2,14000.0,7000.0,0,0.0,0.0,0.0,0.004,0,1
+vacation,Discretionary / Leisure,2012,Standard Consumer,2,14000.0,7000.0,1,6000.0,50.0,42.8571,0.004,0,0
+vacation,Discretionary / Leisure,2015,Prime Low Risk,2,14000.0,7000.0,0,0.0,0.0,0.0,0.004,0,0
+credit_card,Debt Refinancing,2009,Subprime,1,13475.0,13475.0,0,0.0,0.0,0.0,0.0038,1,0
+major_purchase,Consumer Durable,2010,Deep Subprime,1,13200.0,13200.0,0,0.0,0.0,0.0,0.0037,0,0
+medical,Emergency / Healthcare,2008,Near Prime,2,13000.0,6500.0,0,0.0,0.0,0.0,0.0037,0,1
+small_business,Commercial / Venture,2009,Prime Low Risk,1,13000.0,13000.0,0,0.0,0.0,0.0,0.0037,0,1
+medical,Emergency / Healthcare,2009,Near Prime,1,12000.0,12000.0,0,0.0,0.0,0.0,0.0034,0,1
+medical,Emergency / Healthcare,2011,Deep Subprime,1,12000.0,12000.0,1,12000.0,100.0,100.0,0.0034,0,1
+vacation,Discretionary / Leisure,2010,Standard Consumer,1,12000.0,12000.0,0,0.0,0.0,0.0,0.0034,0,0
+vacation,Discretionary / Leisure,2013,Prime Low Risk,1,12000.0,12000.0,0,0.0,0.0,0.0,0.0034,0,0
+credit_card,Debt Refinancing,2016,High Default Risk,1,11650.0,11650.0,0,0.0,0.0,0.0,0.0033,1,0
+moving,Lifestyle / Relocation,2014,High Default Risk,1,11500.0,11500.0,0,0.0,0.0,0.0,0.0033,0,1
+moving,Lifestyle / Relocation,2011,Standard Consumer,2,11300.0,5650.0,1,1300.0,50.0,11.5044,0.0032,0,1
+major_purchase,Consumer Durable,2009,Prime Low Risk,2,11000.0,5500.0,0,0.0,0.0,0.0,0.0031,0,0
+moving,Lifestyle / Relocation,2011,Elevated Risk,2,10950.0,5475.0,0,0.0,0.0,0.0,0.0031,0,1
+car,Auto / Vehicle,2012,Deep Subprime,1,10800.0,10800.0,1,10800.0,100.0,100.0,0.0031,0,0
+credit_card,Debt Refinancing,2008,Subprime,1,10750.0,10750.0,0,0.0,0.0,0.0,0.0031,1,0
+car,Auto / Vehicle,2011,Subprime,3,10700.0,3566.67,0,0.0,0.0,0.0,0.003,0,0
+moving,Lifestyle / Relocation,2016,Elevated Risk,1,10525.0,10525.0,1,10525.0,100.0,100.0,0.003,0,1
+other,Miscellaneous,2007,Prime Low Risk,2,10500.0,5250.0,0,0.0,0.0,0.0,0.003,0,0
+other,Miscellaneous,2012,Subprime,4,10500.0,2625.0,0,0.0,0.0,0.0,0.003,0,0
+moving,Lifestyle / Relocation,2008,Prime Low Risk,2,10200.0,5100.0,0,0.0,0.0,0.0,0.0029,0,1
+car,Auto / Vehicle,2008,Prime Low Risk,1,10000.0,10000.0,0,0.0,0.0,0.0,0.0028,0,0
+car,Auto / Vehicle,2009,Elevated Risk,1,10000.0,10000.0,0,0.0,0.0,0.0,0.0028,0,0
+car,Auto / Vehicle,2009,Standard Consumer,1,10000.0,10000.0,0,0.0,0.0,0.0,0.0028,0,0
+home_improvement,Home & Property,2009,Deep Subprime,1,10000.0,10000.0,0,0.0,0.0,0.0,0.0028,0,0
+house,Home & Property,2010,Elevated Risk,1,10000.0,10000.0,1,10000.0,100.0,100.0,0.0028,0,0
+vacation,Discretionary / Leisure,2014,Prime Low Risk,1,10000.0,10000.0,0,0.0,0.0,0.0,0.0028,0,0
+wedding,Lifestyle / Event,2010,Standard Consumer,1,10000.0,10000.0,0,0.0,0.0,0.0,0.0028,0,0
+medical,Emergency / Healthcare,2010,Elevated Risk,1,9600.0,9600.0,0,0.0,0.0,0.0,0.0027,0,1
+medical,Emergency / Healthcare,2009,Standard Consumer,1,9500.0,9500.0,0,0.0,0.0,0.0,0.0027,0,1
+house,Home & Property,2016,High Default Risk,1,9300.0,9300.0,1,9300.0,100.0,100.0,0.0026,0,0
+home_improvement,Home & Property,2008,Prime Low Risk,3,8900.0,2966.67,0,0.0,0.0,0.0,0.0025,0,0
+renewable_energy,Green Energy,2014,Standard Consumer,2,8500.0,4250.0,0,0.0,0.0,0.0,0.0024,0,0
+debt_consolidation,Debt Refinancing,2009,Deep Subprime,1,8000.0,8000.0,0,0.0,0.0,0.0,0.0023,1,0
+moving,Lifestyle / Relocation,2013,Near Prime,1,8000.0,8000.0,0,0.0,0.0,0.0,0.0023,0,1
+renewable_energy,Green Energy,2016,Near Prime,1,8000.0,8000.0,0,0.0,0.0,0.0,0.0023,0,0
+vacation,Discretionary / Leisure,2009,Standard Consumer,1,8000.0,8000.0,0,0.0,0.0,0.0,0.0023,0,0
+debt_consolidation,Debt Refinancing,2007,Subprime,1,7500.0,7500.0,0,0.0,0.0,0.0,0.0021,1,0
+major_purchase,Consumer Durable,2008,Subprime,1,7500.0,7500.0,0,0.0,0.0,0.0,0.0021,0,0
+moving,Lifestyle / Relocation,2008,Near Prime,1,7500.0,7500.0,0,0.0,0.0,0.0,0.0021,0,1
+educational,Education,2008,Near Prime,1,7000.0,7000.0,0,0.0,0.0,0.0,0.002,0,0
+educational,Education,2010,Prime Low Risk,1,7000.0,7000.0,0,0.0,0.0,0.0,0.002,0,0
+house,Home & Property,2016,Near Prime,1,7000.0,7000.0,1,7000.0,100.0,100.0,0.002,0,0
+other,Miscellaneous,2009,Deep Subprime,1,7000.0,7000.0,0,0.0,0.0,0.0,0.002,0,0
+renewable_energy,Green Energy,2012,Subprime,1,7000.0,7000.0,0,0.0,0.0,0.0,0.002,0,0
+wedding,Lifestyle / Event,2008,Standard Consumer,1,7000.0,7000.0,0,0.0,0.0,0.0,0.002,0,0
+educational,Education,2009,Standard Consumer,2,6800.0,3400.0,0,0.0,0.0,0.0,0.0019,0,0
+moving,Lifestyle / Relocation,2009,Prime Low Risk,2,6800.0,3400.0,0,0.0,0.0,0.0,0.0019,0,1
+other,Miscellaneous,2007,Near Prime,2,6800.0,3400.0,1,4000.0,50.0,58.8235,0.0019,0,0
+medical,Emergency / Healthcare,2011,Standard Consumer,2,6600.0,3300.0,0,0.0,0.0,0.0,0.0019,0,1
+debt_consolidation,Debt Refinancing,2007,Standard Consumer,1,6500.0,6500.0,0,0.0,0.0,0.0,0.0018,1,0
+other,Miscellaneous,2008,Standard Consumer,1,6300.0,6300.0,0,0.0,0.0,0.0,0.0018,0,0
+car,Auto / Vehicle,2014,Deep Subprime,1,6225.0,6225.0,0,0.0,0.0,0.0,0.0018,0,0
+small_business,Commercial / Venture,2016,Subprime,1,6150.0,6150.0,1,6150.0,100.0,100.0,0.0017,0,1
+educational,Education,2010,Elevated Risk,1,6000.0,6000.0,0,0.0,0.0,0.0,0.0017,0,0
+home_improvement,Home & Property,2009,Elevated Risk,1,6000.0,6000.0,0,0.0,0.0,0.0,0.0017,0,0
+medical,Emergency / Healthcare,2013,Near Prime,1,6000.0,6000.0,0,0.0,0.0,0.0,0.0017,0,1
+moving,Lifestyle / Relocation,2009,Near Prime,1,6000.0,6000.0,0,0.0,0.0,0.0,0.0017,0,1
+renewable_energy,Green Energy,2011,Elevated Risk,1,6000.0,6000.0,0,0.0,0.0,0.0,0.0017,0,0
+renewable_energy,Green Energy,2011,Near Prime,2,5400.0,2700.0,0,0.0,0.0,0.0,0.0015,0,0
+vacation,Discretionary / Leisure,2011,Elevated Risk,1,5050.0,5050.0,0,0.0,0.0,0.0,0.0014,0,0
+home_improvement,Home & Property,2007,Prime Low Risk,1,5000.0,5000.0,0,0.0,0.0,0.0,0.0014,0,0
+house,Home & Property,2007,Prime Low Risk,1,5000.0,5000.0,0,0.0,0.0,0.0,0.0014,0,0
+renewable_energy,Green Energy,2016,Deep Subprime,1,5000.0,5000.0,1,5000.0,100.0,100.0,0.0014,0,0
+vacation,Discretionary / Leisure,2010,Prime Low Risk,2,5000.0,2500.0,0,0.0,0.0,0.0,0.0014,0,0
+renewable_energy,Green Energy,2014,Elevated Risk,1,4800.0,4800.0,0,0.0,0.0,0.0,0.0014,0,0
+car,Auto / Vehicle,2008,Elevated Risk,1,4000.0,4000.0,1,4000.0,100.0,100.0,0.0011,0,0
+credit_card,Debt Refinancing,2007,Standard Consumer,1,4000.0,4000.0,0,0.0,0.0,0.0,0.0011,1,0
+medical,Emergency / Healthcare,2009,Prime Low Risk,1,4000.0,4000.0,0,0.0,0.0,0.0,0.0011,0,1
+small_business,Commercial / Venture,2008,Near Prime,1,4000.0,4000.0,0,0.0,0.0,0.0,0.0011,0,1
+vacation,Discretionary / Leisure,2009,Near Prime,1,4000.0,4000.0,0,0.0,0.0,0.0,0.0011,0,0
+credit_card,Debt Refinancing,2007,Prime Low Risk,1,3500.0,3500.0,0,0.0,0.0,0.0,0.001,1,0
+moving,Lifestyle / Relocation,2011,Subprime,1,3000.0,3000.0,1,3000.0,100.0,100.0,0.0009,0,1
+moving,Lifestyle / Relocation,2016,Subprime,1,3000.0,3000.0,0,0.0,0.0,0.0,0.0009,0,1
+wedding,Lifestyle / Event,2012,Deep Subprime,1,3000.0,3000.0,0,0.0,0.0,0.0,0.0009,0,0
+moving,Lifestyle / Relocation,2010,High Default Risk,1,2800.0,2800.0,0,0.0,0.0,0.0,0.0008,0,1
+vacation,Discretionary / Leisure,2008,Near Prime,1,2500.0,2500.0,0,0.0,0.0,0.0,0.0007,0,0
+vacation,Discretionary / Leisure,2010,Near Prime,2,2500.0,1250.0,1,1500.0,50.0,60.0,0.0007,0,0
+educational,Education,2015,Near Prime,1,2200.0,2200.0,0,0.0,0.0,0.0,0.0006,0,0
+educational,Education,2009,Near Prime,1,1925.0,1925.0,0,0.0,0.0,0.0,0.0005,0,0
+major_purchase,Consumer Durable,2009,Standard Consumer,1,1500.0,1500.0,0,0.0,0.0,0.0,0.0004,0,0
+other,Miscellaneous,2009,Elevated Risk,1,1500.0,1500.0,1,1500.0,100.0,100.0,0.0004,0,0
+vacation,Discretionary / Leisure,2016,Deep Subprime,1,1225.0,1225.0,0,0.0,0.0,0.0,0.0003,0,0
+major_purchase,Consumer Durable,2008,Prime Low Risk,1,1200.0,1200.0,0,0.0,0.0,0.0,0.0003,0,0
